@@ -1,17 +1,9 @@
 #include "RenderSystem.hpp"
 #include "../../GameWorld.hpp"
+#include <algorithm>
 #include <cmath>
 
 namespace game::ecs::systems {
-
-namespace {
-void renderFilledCircle(SDL_Renderer* renderer, int cx, int cy, int radius) {
-    for (int dy = -radius; dy <= radius; ++dy) {
-        int dx = static_cast<int>(std::sqrt(radius * radius - dy * dy));
-        SDL_RenderDrawLine(renderer, cx - dx, cy + dy, cx + dx, cy + dy);
-    }
-}
-} // namespace
 
 // Constructor implementation
 RenderSystem::RenderSystem() {
@@ -75,14 +67,28 @@ void RenderSystem::update(float deltaTime) {
         // Render the sprite
         SDL_Color color = sprite->getColor();
         SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, color.a);
+        SDL_RenderFillRect(renderer, &destRect);
 
-        if (sprite->getShape() == components::Sprite::Shape::Circle) {
-            int radius = static_cast<int>(std::min(sprite->getWidth(), sprite->getHeight()) / 2.0f);
-            int cx = static_cast<int>(transform->getPosition().x + radius);
-            int cy = static_cast<int>(transform->getPosition().y + radius);
-            renderFilledCircle(renderer, cx, cy, radius);
-        } else {
-            SDL_RenderFillRect(renderer, &destRect);
+        // Draw direction line if movement component is available
+        auto movement = getComponentManager()->getComponent<components::Movement>(entity);
+        if (movement) {
+            const auto& vel = movement->getVelocity();
+            if (vel.x != 0.0f || vel.y != 0.0f) {
+                float length = std::min(sprite->getWidth(), sprite->getHeight()) / 2.0f;
+                float centerX = transform->getPosition().x + sprite->getWidth() / 2.0f;
+                float centerY = transform->getPosition().y + sprite->getHeight() / 2.0f;
+                float mag = std::sqrt(vel.x * vel.x + vel.y * vel.y);
+                float dirX = vel.x / mag;
+                float dirY = vel.y / mag;
+                int endX = static_cast<int>(centerX + dirX * length);
+                int endY = static_cast<int>(centerY + dirY * length);
+                SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+                SDL_RenderDrawLine(renderer,
+                                   static_cast<int>(centerX),
+                                   static_cast<int>(centerY),
+                                   endX,
+                                   endY);
+            }
         }
 
         SDL_Log("[RenderSystem] Rendered entity %llu at (%.2f, %.2f) with size %.2fx%.2f",
