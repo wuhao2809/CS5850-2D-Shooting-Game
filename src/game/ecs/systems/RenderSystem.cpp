@@ -1,7 +1,17 @@
 #include "RenderSystem.hpp"
 #include "../../GameWorld.hpp"
+#include <cmath>
 
 namespace game::ecs::systems {
+
+namespace {
+void renderFilledCircle(SDL_Renderer* renderer, int cx, int cy, int radius) {
+    for (int dy = -radius; dy <= radius; ++dy) {
+        int dx = static_cast<int>(std::sqrt(radius * radius - dy * dy));
+        SDL_RenderDrawLine(renderer, cx - dx, cy + dy, cx + dx, cy + dy);
+    }
+}
+} // namespace
 
 // Constructor implementation
 RenderSystem::RenderSystem() {
@@ -65,7 +75,15 @@ void RenderSystem::update(float deltaTime) {
         // Render the sprite
         SDL_Color color = sprite->getColor();
         SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, color.a);
-        SDL_RenderFillRect(renderer, &destRect);
+
+        if (sprite->getShape() == components::Sprite::Shape::Circle) {
+            int radius = static_cast<int>(std::min(sprite->getWidth(), sprite->getHeight()) / 2.0f);
+            int cx = static_cast<int>(transform->getPosition().x + radius);
+            int cy = static_cast<int>(transform->getPosition().y + radius);
+            renderFilledCircle(renderer, cx, cy, radius);
+        } else {
+            SDL_RenderFillRect(renderer, &destRect);
+        }
 
         SDL_Log("[RenderSystem] Rendered entity %llu at (%.2f, %.2f) with size %.2fx%.2f",
                 entity.getId(),

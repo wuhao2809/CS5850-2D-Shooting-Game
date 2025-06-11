@@ -13,9 +13,10 @@
             "scale": { "x": 1, "y": 1 }
           },
           "sprite": {
-            "width": 200,
-            "height": 100,
-            "color": { "r": 0, "g": 255, "b": 0 }
+            "width": 50,
+            "height": 50,
+            "color": { "r": 0, "g": 0, "b": 0 },
+            "shape": "circle"
           },
           "movement": {
             "velocity": { "x": 0, "y": 0 },

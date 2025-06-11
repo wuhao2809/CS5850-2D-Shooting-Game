@@ -122,6 +122,15 @@ void GameWorld::createEntityFromJson(const nlohmann::json& data) {
     if (data.contains("components") && data["components"].contains("sprite")) {
         const auto& s = data["components"]["sprite"];
         SDL_Log("Adding Sprite component to entity %s with data: %s", entityId.c_str(), s.dump().c_str());
+
+        ecs::components::Sprite::Shape shape = ecs::components::Sprite::Shape::Rectangle;
+        if (s.contains("shape")) {
+            std::string shapeStr = s["shape"].get<std::string>();
+            if (shapeStr == "circle") {
+                shape = ecs::components::Sprite::Shape::Circle;
+            }
+        }
+
         componentManager.addComponent<ecs::components::Sprite>(
             entity,
             s["width"].get<float>(),
@@ -130,7 +139,8 @@ void GameWorld::createEntityFromJson(const nlohmann::json& data) {
                 s["color"]["r"].get<int>(),
                 s["color"]["g"].get<int>(),
                 s["color"]["b"].get<int>()
-            )
+            ),
+            shape
         );
         systemManager.onComponentAdded(entity, std::type_index(typeid(ecs::components::Sprite)));
         SDL_Log("Sprite component added");
