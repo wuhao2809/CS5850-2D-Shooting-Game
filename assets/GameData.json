@@ -1,0 +1,32 @@
+{
+  "world": {
+    "width": 800,
+    "height": 600
+  },
+  "entities": [
+    {
+      "name": "player",
+      "type": "circle",
+      "position": {
+        "x": 400,
+        "y": 300
+      },
+      "size": {
+        "width": 30,
+        "height": 30
+      },
+      "color": {
+        "r": 0,
+        "g": 255,
+        "b": 0,
+        "a": 255
+      },
+      "circle": {
+        "radius": 15,
+        "stepSize": 0.1,
+        "thickness": 2
+      },
+      "components": ["Transform", "Sprite", "Movement", "Input", "Direction"]
+    }
+  ]
+} 

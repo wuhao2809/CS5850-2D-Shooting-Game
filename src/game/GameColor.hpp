@@ -3,13 +3,19 @@
 #include <SDL3/SDL.h>
 
 namespace game {
-struct GameColor {
-  Uint8 r;
-  Uint8 g;
-  Uint8 b;
-  Uint8 a;
+    class GameColor {
+    public:
+        GameColor() : r(0), g(0), b(0), a(255) {}
+        GameColor(Uint8 r, Uint8 g, Uint8 b, Uint8 a = 255) : r(r), g(g), b(b), a(a) {}
+        
+        operator SDL_Color() const {
+            return {r, g, b, a};
+        }
+        
+        static const GameColor BACKGROUND; // Orange/red background
+        
+        Uint8 r, g, b, a;
+    };
 
-  GameColor(Uint8 red, Uint8 green, Uint8 blue, Uint8 alpha = 255)
-      : r(red), g(green), b(blue), a(alpha) {}
-};
-} // namespace game
+    inline const GameColor GameColor::BACKGROUND(255, 128, 64, 255);
+} 

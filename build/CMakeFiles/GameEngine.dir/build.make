@@ -69,48 +69,34 @@ include CMakeFiles/GameEngine.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/GameEngine.dir/flags.make
 
-CMakeFiles/GameEngine.dir/src/main.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/src/main.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/main.cpp
-CMakeFiles/GameEngine.dir/src/main.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GameEngine.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/main.cpp.o -MF CMakeFiles/GameEngine.dir/src/main.cpp.o.d -o CMakeFiles/GameEngine.dir/src/main.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/main.cpp"
+CMakeFiles/GameEngine.dir/src/main/main.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/main/main.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/main/main.cpp
+CMakeFiles/GameEngine.dir/src/main/main.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GameEngine.dir/src/main/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/main/main.cpp.o -MF CMakeFiles/GameEngine.dir/src/main/main.cpp.o.d -o CMakeFiles/GameEngine.dir/src/main/main.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/main/main.cpp"
 
-CMakeFiles/GameEngine.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/main.cpp" > CMakeFiles/GameEngine.dir/src/main.cpp.i
+CMakeFiles/GameEngine.dir/src/main/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/main/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/main/main.cpp" > CMakeFiles/GameEngine.dir/src/main/main.cpp.i
 
-CMakeFiles/GameEngine.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/main.cpp" -o CMakeFiles/GameEngine.dir/src/main.cpp.s
-
-CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/GameEngine.cpp
-CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.o -MF CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.o.d -o CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/GameEngine.cpp"
-
-CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/GameEngine.cpp" > CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.i
-
-CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/GameEngine.cpp" -o CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.s
+CMakeFiles/GameEngine.dir/src/main/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/main/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/main/main.cpp" -o CMakeFiles/GameEngine.dir/src/main/main.cpp.s
 
 # Object files for target GameEngine
 GameEngine_OBJECTS = \
-"CMakeFiles/GameEngine.dir/src/main.cpp.o" \
-"CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.o"
+"CMakeFiles/GameEngine.dir/src/main/main.cpp.o"
 
 # External object files for target GameEngine
 GameEngine_EXTERNAL_OBJECTS =
 
-/Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: CMakeFiles/GameEngine.dir/src/main.cpp.o
-/Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.o
+/Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: CMakeFiles/GameEngine.dir/src/main/main.cpp.o
 /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: CMakeFiles/GameEngine.dir/build.make
-/Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: /opt/homebrew/lib/libSDL3.0.dylib
+/Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: libgame_ecs.a
+/Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: /opt/homebrew/opt/sdl3/lib/libSDL3.dylib
+/Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: /opt/homebrew/opt/sdl3_ttf/lib/libSDL3_ttf.dylib
 /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: CMakeFiles/GameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable \"/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/bin/GameEngine\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable \"/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/bin/GameEngine\""
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GameEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

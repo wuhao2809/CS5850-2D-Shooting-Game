@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/GameEngine.cpp" "CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.o" "gcc" "CMakeFiles/GameEngine.dir/src/game/GameEngine.cpp.o.d"
-  "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/main.cpp" "CMakeFiles/GameEngine.dir/src/main.cpp.o" "gcc" "CMakeFiles/GameEngine.dir/src/main.cpp.o.d"
+  "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/main/main.cpp" "CMakeFiles/GameEngine.dir/src/main/main.cpp.o" "gcc" "CMakeFiles/GameEngine.dir/src/main/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
