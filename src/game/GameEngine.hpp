@@ -11,7 +11,7 @@
 #include <unordered_map>
 #include "GameColor.hpp"
 #include "Timer.hpp"
-#include "HUD.hpp"
+#include "ui/HUD.hpp"
 #include "GameWorld.hpp"
 #include "events/Event.hpp"
 #include "events/KeyboardEvent.hpp"

@@ -8,115 +8,121 @@
 #include "../components/Movement.hpp"
 #include "../components/Sprite.hpp"
 #include <SDL3/SDL.h>
+#include <memory>
 
 namespace game::ecs::systems {
 
+/**
+ * System that handles simple entity movement without boundary collision.
+ * 
+ * Based on: Lesson-40-WorldState/Python/src/game/ecs/systems/movement_system.py
+ *           Lesson-40-WorldState/Java/src/game/ecs/systems/MovementSystem.java
+ */
 class MovementSystem : public System {
 public:
-    MovementSystem(int worldWidth, int worldHeight) 
-        : worldWidth_(worldWidth), worldHeight_(worldHeight) {
+    /**
+     * Constructor - no world dimensions needed since no boundary checking
+     */
+    MovementSystem() {
         // Register required components
-        registerComponent<components::Transform>();
-        registerComponent<components::Movement>();
-        registerComponent<components::Sprite>();
+        registerRequiredComponent<components::Transform>();
+        registerRequiredComponent<components::Movement>();
+        registerRequiredComponent<components::Sprite>();
+        
+        SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, 
+                   "MovementSystem initialized (no boundary collision)");
     }
 
-    void setWorldSize(int width, int height) {
-        worldWidth_ = width;
-        worldHeight_ = height;
-    }
-
+    /**
+     * Update all entities with movement
+     */
     void update(float deltaTime) override {
-        SDL_Log("[MovementSystem] update triggered, deltaTime=%.4f, entities=%zu", deltaTime, getEntities().size());
+        SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, 
+                   "[MovementSystem] update triggered, deltaTime=%.4f, entities=%zu", 
+                   deltaTime, getEntities().size());
+        
         // Log all entity IDs in the set before processing
         std::string ids;
         for (const auto& e : getEntities()) {
             ids += std::to_string(e.getId()) + ", ";
         }
-        SDL_Log("[MovementSystem] Entities in system at update: [%s]", ids.c_str());
+        SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, 
+                   "[MovementSystem] Entities in system at update: [%s]", ids.c_str());
+        
         for (auto& entity : getEntities()) {
-            auto transform = getComponentManager()->getComponent<components::Transform>(entity);
-            auto movement = getComponentManager()->getComponent<components::Movement>(entity);
-            auto sprite = getComponentManager()->getComponent<components::Sprite>(entity);
-
-            if (!movement->isEnabled()) {
-                continue;
-            }
-
-            // Log initial state
-            SDL_Log("Entity %llu - Initial Position: (%.2f, %.2f), Velocity: (%.2f, %.2f)",
-                    entity.getId(),
-                    transform->getPosition().x,
-                    transform->getPosition().y,
-                    movement->getVelocity().x,
-                    movement->getVelocity().y);
-
-            // Apply acceleration
-            movement->applyAcceleration(deltaTime);
-
-            // Calculate new position
-            float newX = transform->getPosition().x + movement->getVelocity().x * deltaTime;
-            float newY = transform->getPosition().y + movement->getVelocity().y * deltaTime;
-
-            // Check boundaries and update position
-            checkBoundaries(entity, newX, newY, sprite->getWidth(), sprite->getHeight(), movement);
-            transform->setPosition(newX, newY);
-
-            // Log final state
-            SDL_Log("Entity %llu - Final Position: (%.2f, %.2f), Velocity: (%.2f, %.2f)",
-                    entity.getId(),
-                    transform->getPosition().x,
-                    transform->getPosition().y,
-                    movement->getVelocity().x,
-                    movement->getVelocity().y);
+            processEntity(entity, deltaTime);
         }
     }
 
     void onEntityAdded(const Entity& entity) override {
-        SDL_Log("[MovementSystem] onEntityAdded for entity %llu", entity.getId());
+        SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, 
+                   "[MovementSystem] onEntityAdded for entity %llu", entity.getId());
         addEntity(entity);
     }
 
     void onEntityRemoved(const Entity& entity) override {
-        SDL_Log("Entity %llu removed from MovementSystem", entity.getId());
+        SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, 
+                   "Entity %llu removed from MovementSystem", entity.getId());
     }
 
 private:
-    void checkBoundaries(const Entity& entity, float& x, float& y, float width, float height, 
-                        components::Movement* movement) {
-        bool hitBoundary = false;
-        
-        // Check horizontal boundaries
-        if (x <= 0) {
-            x = 0;
-            movement->setVelocity(-movement->getVelocity().x, movement->getVelocity().y);
-            hitBoundary = true;
-        }
-        else if (x + width >= worldWidth_) {
-            x = worldWidth_ - width;
-            movement->setVelocity(-movement->getVelocity().x, movement->getVelocity().y);
-            hitBoundary = true;
+    /**
+     * Process a single entity's movement
+     */
+    void processEntity(const Entity& entity, float deltaTime) {
+        auto transform = getComponentManager()->getComponent<components::Transform>(entity);
+        auto movement = getComponentManager()->getComponent<components::Movement>(entity);
+
+        if (!movement->isEnabled()) {
+            SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, 
+                       "Entity %llu movement is disabled", entity.getId());
+            return;
         }
 
-        // Check vertical boundaries
-        if (y <= 0) {
-            y = 0;
-            movement->setVelocity(movement->getVelocity().x, -movement->getVelocity().y);
-            hitBoundary = true;
-        }
-        else if (y + height >= worldHeight_) {
-            y = worldHeight_ - height;
-            movement->setVelocity(movement->getVelocity().x, -movement->getVelocity().y);
-            hitBoundary = true;
+        // Log initial state
+        SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, 
+                   "Entity %llu - Initial Position: (%.2f, %.2f), Velocity: (%.2f, %.2f)",
+                   entity.getId(),
+                   transform->getPosition().x,
+                   transform->getPosition().y,
+                   movement->getVelocity().x,
+                   movement->getVelocity().y);
+
+        // Update velocity based on acceleration
+        movement->applyAcceleration(deltaTime);
+
+        // Apply max speed limit if set
+        if (movement->getMaxSpeed() > 0) {
+            clampVelocity(movement);
         }
 
-        if (hitBoundary) {
-            SDL_Log("Entity %llu hit boundary at (%.2f, %.2f)", entity.getId(), x, y);
-        }
+        // Calculate and apply new position (no boundary checking)
+        float newX = transform->getPosition().x + movement->getVelocity().x * deltaTime;
+        float newY = transform->getPosition().y + movement->getVelocity().y * deltaTime;
+        transform->setPosition(newX, newY);
+
+        // Log final state
+        SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, 
+                   "Entity %llu - Final Position: (%.2f, %.2f), Velocity: (%.2f, %.2f)",
+                   entity.getId(),
+                   transform->getPosition().x,
+                   transform->getPosition().y,
+                   movement->getVelocity().x,
+                   movement->getVelocity().y);
     }
 
-    int worldWidth_;
-    int worldHeight_;
+    /**
+     * Clamp velocity to max speed if it exceeds the limit
+     */
+    void clampVelocity(components::Movement* movement) {
+        auto velocity = movement->getVelocity();
+        float speed = sqrt(velocity.x * velocity.x + velocity.y * velocity.y);
+        
+        if (speed > movement->getMaxSpeed()) {
+            float scale = movement->getMaxSpeed() / speed;
+            movement->setVelocity(velocity.x * scale, velocity.y * scale);
+        }
+    }
 };
 
 } // namespace game::ecs::systems 

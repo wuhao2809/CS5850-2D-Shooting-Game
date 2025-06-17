@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src" -I/opt/homebrew/opt/sdl3/include -I/opt/homebrew/opt/sdl3_ttf/include -I"/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include"
+CXX_INCLUDES = -I"/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src" -I/opt/homebrew/opt/sdl3/include -I/opt/homebrew/opt/sdl3_ttf/include -I/opt/homebrew/opt/sdl3_image/include -I"/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include"
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
 

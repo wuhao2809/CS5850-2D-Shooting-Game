@@ -95,6 +95,7 @@ GameEngine_EXTERNAL_OBJECTS =
 /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: libgame_ecs.a
 /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: /opt/homebrew/opt/sdl3/lib/libSDL3.dylib
 /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: /opt/homebrew/opt/sdl3_ttf/lib/libSDL3_ttf.dylib
+/Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: /opt/homebrew/opt/sdl3_image/lib/libSDL3_image.dylib
 /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/bin/GameEngine: CMakeFiles/GameEngine.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable \"/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/bin/GameEngine\""
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GameEngine.dir/link.txt --verbose=$(VERBOSE)

@@ -6,6 +6,8 @@
 #include <vector>
 #include <typeindex>
 #include <memory>
+#include <unordered_set>
+#include <SDL3/SDL.h>
 
 namespace game {
 namespace ecs {
@@ -15,45 +17,51 @@ public:
     System() : componentManager_(&ComponentManager::getInstance()) {}
     virtual ~System() = default;
 
-    // Update method that systems must implement
-    virtual void update(float deltaTime) = 0;
-
-    // Called when an entity is added to the system
-    virtual void onEntityAdded(const Entity& entity) = 0;
-
-    // Called when an entity is removed from the system
-    virtual void onEntityRemoved(const Entity& entity) = 0;
-
-    // Get all entities managed by this system
-    const std::vector<Entity>& getEntities() const { return entities_; }
-
-    // Check if an entity has all required components
-    bool hasRequiredComponents(const Entity& entity) const;
-
-protected:
-    // Register a required component type
+    // Required component registration
     template<typename T>
-    void registerComponent() {
-        requiredComponents_.push_back(std::type_index(typeid(T)));
+    void registerRequiredComponent() {
+        requiredComponents_.insert(std::type_index(typeid(T)));
+        SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, "[System] Registered required component: %s", typeid(T).name());
     }
 
-    // Add an entity to the system
+    // Optional component registration
+    template<typename T>
+    void registerOptionalComponent() {
+        optionalComponents_.insert(std::type_index(typeid(T)));
+        SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, "[System] Registered optional component: %s", typeid(T).name());
+    }
+
+    // Check if entity has all required components
+    bool hasRequiredComponents(const Entity& entity) const;
+
+    // Entity management
     void addEntity(const Entity& entity);
-
-    // Remove an entity from the system
     void removeEntity(const Entity& entity);
+    const std::vector<Entity>& getEntities() const { return entities_; }
 
+    // Virtual methods to be implemented by derived systems
+    virtual void update(float deltaTime) = 0;
+    virtual void onEntityAdded(const Entity& entity) {}
+    virtual void onEntityRemoved(const Entity& entity) {}
+
+    // Helper method to get optional component
+    template<typename T>
+    T* getOptionalComponent(const Entity& entity) const {
+        if (optionalComponents_.find(std::type_index(typeid(T))) != optionalComponents_.end()) {
+            return componentManager_->getComponent<T>(entity);
+        }
+        return nullptr;
+    }
+
+protected:
     ComponentManager* getComponentManager() const {
         return componentManager_;
     }
 
-    const std::vector<std::type_index>& getRequiredComponents() const {
-        return requiredComponents_;
-    }
-
 private:
     std::vector<Entity> entities_;  // Maintains insertion order
-    std::vector<std::type_index> requiredComponents_;
+    std::unordered_set<std::type_index> requiredComponents_;
+    std::unordered_set<std::type_index> optionalComponents_;
     ComponentManager* componentManager_;
 };
 

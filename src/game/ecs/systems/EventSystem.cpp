@@ -23,9 +23,9 @@ EventSystem::EventSystem(events::EventManager* eventManager)
     }
     
     // Register required components
-    registerComponent<components::Transform>();
-    registerComponent<components::Movement>();
-    registerComponent<components::Input>();
+    registerRequiredComponent<components::Transform>();
+    registerRequiredComponent<components::Movement>();
+    registerRequiredComponent<components::Input>();
     SDL_LogInfo(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Components registered");
 
     // Subscribe to keyboard events
@@ -61,17 +61,17 @@ void EventSystem::onEvent(const events::Event& event) {
             key.c_str(), keyboardEvent->isPressed());
         
         if (keyboardEvent->isPressed()) {
-            SDL_LogWarn(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Key pressed: %s", key.c_str());
+            SDL_LogDebug(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Key pressed: %s", key.c_str());
             pressedKeys.insert(key);
         } else {
-            SDL_LogWarn(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Key released: %s", key.c_str());
+            SDL_LogDebug(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Key released: %s", key.c_str());
             pressedKeys.erase(key);
         }
         
         // Log current pressed keys
-        SDL_LogInfo(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Currently pressed keys (%zu):", pressedKeys.size());
+        SDL_LogDebug(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Currently pressed keys (%zu):", pressedKeys.size());
         for (const auto& pressedKey : pressedKeys) {
-            SDL_LogInfo(SDL_LOG_CATEGORY_INPUT, "  - %s", pressedKey.c_str());
+            SDL_LogDebug(SDL_LOG_CATEGORY_INPUT, "  - %s", pressedKey.c_str());
         }
     } else {
         SDL_LogInfo(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Received non-keyboard event");
@@ -107,27 +107,27 @@ Vector2 EventSystem::calculateVelocity(const components::Input* input) {
     float speed = input->getMoveSpeed();
     
     // Log the key bindings being checked
-    SDL_LogInfo(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Checking key bindings for entity with speed %.2f:", speed);
-    SDL_LogInfo(SDL_LOG_CATEGORY_INPUT, "  - Up: %s", input->getKey("up").c_str());
-    SDL_LogInfo(SDL_LOG_CATEGORY_INPUT, "  - Down: %s", input->getKey("down").c_str());
-    SDL_LogInfo(SDL_LOG_CATEGORY_INPUT, "  - Left: %s", input->getKey("left").c_str());
-    SDL_LogInfo(SDL_LOG_CATEGORY_INPUT, "  - Right: %s", input->getKey("right").c_str());
+    SDL_LogDebug(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Checking key bindings for entity with speed %.2f:", speed);
+    SDL_LogDebug(SDL_LOG_CATEGORY_INPUT, "  - Up: %s", input->getKey("up").c_str());
+    SDL_LogDebug(SDL_LOG_CATEGORY_INPUT, "  - Down: %s", input->getKey("down").c_str());
+    SDL_LogDebug(SDL_LOG_CATEGORY_INPUT, "  - Left: %s", input->getKey("left").c_str());
+    SDL_LogDebug(SDL_LOG_CATEGORY_INPUT, "  - Right: %s", input->getKey("right").c_str());
     
     if (pressedKeys.count(input->getKey("up"))) {
         velocity.y -= speed;
-        SDL_LogInfo(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Up key active");
+        SDL_LogDebug(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Up key active");
     }
     if (pressedKeys.count(input->getKey("down"))) {
         velocity.y += speed;
-        SDL_LogInfo(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Down key active");
+        SDL_LogDebug(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Down key active");
     }
     if (pressedKeys.count(input->getKey("left"))) {
         velocity.x -= speed;
-        SDL_LogInfo(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Left key active");
+        SDL_LogDebug(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Left key active");
     }
     if (pressedKeys.count(input->getKey("right"))) {
         velocity.x += speed;
-        SDL_LogInfo(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Right key active");
+        SDL_LogDebug(SDL_LOG_CATEGORY_INPUT, "[EventSystem] Right key active");
     }
     
     return velocity;

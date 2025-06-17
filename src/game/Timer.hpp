@@ -62,15 +62,34 @@ public:
      */
     void setTargetFps(int fps);
 
+    /**
+     * Get the current game time in seconds since Timer creation.
+     * 
+     * This provides a hardware-independent, monotonic time source for game systems.
+     * Use this instead of direct hardware timing functions like SDL_GetTicks() or
+     * std::chrono calls to ensure consistent, testable timing behavior.
+     * 
+     * @return Time in seconds since Timer creation
+     * 
+     * @example
+     * // System timing with hardware independence
+     * if (timer->getClock() - lastAction > cooldown) {
+     *     performAction();
+     *     lastAction = timer->getClock();
+     * }
+     */
+    double getClock() const;
+
 private:
     static constexpr int MAX_FRAME_HISTORY = 60;  // Keep last 60 frames for smoothing
     static constexpr double FPS_UPDATE_INTERVAL = 1.0;  // Update FPS every second
 
-    Uint64 frameStartTicks;        // Frame start time in ticks
+    Uint32 creationTicks;          // Track timer creation time for getClock()
+    Uint32 frameStartTicks;        // Frame start time in ticks
     double targetFrameTime;        // Target time per frame in seconds
     int frames;                    // Frame counter for FPS calculation
     int currentFps;               // Current FPS value
-    Uint64 lastFpsUpdate;         // Last time FPS was updated
+    Uint32 lastFpsUpdate;         // Last time FPS was updated
     double sleepError;            // Track sleep inaccuracy
     double lastFrameTime;         // Actual elapsed time of the last frame
 

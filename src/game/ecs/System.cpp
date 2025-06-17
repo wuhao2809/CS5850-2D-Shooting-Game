@@ -8,41 +8,72 @@ namespace game {
 namespace ecs {
 
 bool System::hasRequiredComponents(const Entity& entity) const {
-    // Check if the entity has all required components
+    if (!componentManager_) {
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "[System] ComponentManager not set for system %s", 
+            typeid(*this).name());
+        return false;
+    }
+
+    // Check required components
     for (const auto& componentType : requiredComponents_) {
         if (!componentManager_->hasComponent(entity, componentType)) {
-            SDL_Log("[System] Entity %llu missing component %s", entity.getId(), componentType.name());
+            SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, "[System] Entity %llu missing required component %s for system %s", 
+                entity.getId(), componentType.name(), typeid(*this).name());
             return false;
         }
     }
-    SDL_Log("[System] Entity %llu has all required components", entity.getId());
+
+    SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, "[System] Entity %llu has all required components for system %s", 
+        entity.getId(), typeid(*this).name());
     return true;
 }
 
 void System::addEntity(const Entity& entity) {
-    // Check if entity is already in the system
-    if (std::find(entities_.begin(), entities_.end(), entity) == entities_.end()) {
-        entities_.push_back(entity);
-        SDL_Log("[System] Entity %llu added to system", entity.getId());
-        // Log all entity IDs in the vector after insertion
-        std::string ids;
-        for (const auto& e : entities_) {
-            ids += std::to_string(e.getId()) + ", ";
+    SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, "[System] Adding entity %llu to system %s", 
+        entity.getId(), typeid(*this).name());
+    
+    // Check if entity already exists
+    for (const auto& existingEntity : entities_) {
+        if (existingEntity.getId() == entity.getId()) {
+            SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, "[System] Entity %llu already exists in system %s", 
+                entity.getId(), typeid(*this).name());
+            return;
         }
-        SDL_Log("[System] Entities in system after add: [%s]", ids.c_str());
-    } else {
-        SDL_Log("[System] Entity %llu already exists in system", entity.getId());
     }
+    
+    entities_.push_back(entity);
+    onEntityAdded(entity);
+    
+    // Log all entities in the system
+    std::string entityIds;
+    for (const auto& e : entities_) {
+        entityIds += std::to_string(e.getId()) + ", ";
+    }
+    SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, "[System] Entities in system %s after add: [%s]", 
+        typeid(*this).name(), entityIds.c_str());
 }
 
 void System::removeEntity(const Entity& entity) {
-    auto it = std::find(entities_.begin(), entities_.end(), entity);
+    SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, "[System] Removing entity %llu from system %s", 
+        entity.getId(), typeid(*this).name());
+    
+    auto it = std::find_if(entities_.begin(), entities_.end(),
+        [&entity](const Entity& e) { return e.getId() == entity.getId(); });
+    
     if (it != entities_.end()) {
         entities_.erase(it);
-        SDL_Log("[System] Entity %llu removed from system", entity.getId());
         onEntityRemoved(entity);
+        
+        // Log all entities in the system
+        std::string entityIds;
+        for (const auto& e : entities_) {
+            entityIds += std::to_string(e.getId()) + ", ";
+        }
+        SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, "[System] Entities in system %s after remove: [%s]", 
+            typeid(*this).name(), entityIds.c_str());
     } else {
-        SDL_Log("[System] Entity %llu not found in system", entity.getId());
+        SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, "[System] Entity %llu not found in system %s", 
+            entity.getId(), typeid(*this).name());
     }
 }
 

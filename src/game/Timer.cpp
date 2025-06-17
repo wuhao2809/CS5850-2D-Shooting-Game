@@ -3,11 +3,12 @@
 #include <numeric>
 
 Timer::Timer(int targetFps)
-    : frameStartTicks(0)
+    : creationTicks(SDL_GetTicks())  // Initialize creation time for getClock()
+    , frameStartTicks(creationTicks)
     , targetFrameTime(1.0 / targetFps)
     , frames(0)
     , currentFps(targetFps)
-    , lastFpsUpdate(0)
+    , lastFpsUpdate(creationTicks)
     , sleepError(0.0)
     , frameTimeIndex(0)
     , frameTimeCount(0)
@@ -15,6 +16,10 @@ Timer::Timer(int targetFps)
 {
     // Initialize frame times with target frame time
     frameTimes.fill(targetFrameTime);
+    
+    SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, 
+               "Timer initialized: target %d FPS (%.3fms per frame), using hardware-independent timing", 
+               targetFps, targetFrameTime * 1000);
 }
 
 void Timer::startFrame() {
@@ -22,7 +27,7 @@ void Timer::startFrame() {
     frames++;
 
     // Update FPS counter every second
-    Uint64 currentTime = frameStartTicks;
+    Uint32 currentTime = frameStartTicks;
     double timeSinceLastUpdate = (currentTime - lastFpsUpdate) / 1000.0;
     
     if (timeSinceLastUpdate >= FPS_UPDATE_INTERVAL) {
@@ -33,7 +38,7 @@ void Timer::startFrame() {
 }
 
 void Timer::waitForFrameEnd() {
-    Uint64 currentTime = SDL_GetTicks();
+    Uint32 currentTime = SDL_GetTicks();
     double elapsed = (currentTime - frameStartTicks) / 1000.0;
     double remainingTime = targetFrameTime - elapsed - sleepError;
 
@@ -80,6 +85,10 @@ double Timer::getAverageFrameTime() const {
                                frameTimes.begin() + frameTimeCount, 
                                0.0);
     return sum / frameTimeCount;
+}
+
+double Timer::getClock() const {
+    return (SDL_GetTicks() - creationTicks) / 1000.0;
 }
 
 void Timer::setTargetFps(int fps) {

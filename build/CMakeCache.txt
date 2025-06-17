@@ -197,7 +197,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=GameEngineECS
+CMAKE_PROJECT_NAME:STATIC=GameEngineResourceManager
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=3.11.3
@@ -300,13 +300,13 @@ FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 FETCHCONTENT_UPDATES_DISCONNECTED_JSON:BOOL=OFF
 
 //Value Computed by CMake
-GameEngineECS_BINARY_DIR:STATIC=/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build
+GameEngineResourceManager_BINARY_DIR:STATIC=/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build
 
 //Value Computed by CMake
-GameEngineECS_IS_TOP_LEVEL:STATIC=ON
+GameEngineResourceManager_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-GameEngineECS_SOURCE_DIR:STATIC=/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game
+GameEngineResourceManager_SOURCE_DIR:STATIC=/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game
 
 //Build the unit tests when BUILD_TESTING is enabled.
 JSON_BuildTests:BOOL=OFF
@@ -339,7 +339,7 @@ JSON_MultipleHeaders:BOOL=ON
 JSON_SystemInclude:BOOL=OFF
 
 //Dependencies for the target
-game_ecs_LIB_DEPENDS:STATIC=general;/opt/homebrew/opt/sdl3/lib/libSDL3.dylib;general;/opt/homebrew/opt/sdl3_ttf/lib/libSDL3_ttf.dylib;
+game_ecs_LIB_DEPENDS:STATIC=general;/opt/homebrew/opt/sdl3/lib/libSDL3.dylib;general;/opt/homebrew/opt/sdl3_ttf/lib/libSDL3_ttf.dylib;general;/opt/homebrew/opt/sdl3_image/lib/libSDL3_image.dylib;
 
 //Value Computed by CMake
 nlohmann_json_BINARY_DIR:STATIC=/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/_deps/json-build

@@ -97,24 +97,10 @@ CMakeFiles/game_ecs.dir/src/game/GameWorld.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/GameWorld.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/GameWorld.cpp" -o CMakeFiles/game_ecs.dir/src/game/GameWorld.cpp.s
 
-CMakeFiles/game_ecs.dir/src/game/HUD.cpp.o: CMakeFiles/game_ecs.dir/flags.make
-CMakeFiles/game_ecs.dir/src/game/HUD.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/HUD.cpp
-CMakeFiles/game_ecs.dir/src/game/HUD.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game_ecs.dir/src/game/HUD.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/HUD.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/HUD.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/HUD.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/HUD.cpp"
-
-CMakeFiles/game_ecs.dir/src/game/HUD.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/HUD.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/HUD.cpp" > CMakeFiles/game_ecs.dir/src/game/HUD.cpp.i
-
-CMakeFiles/game_ecs.dir/src/game/HUD.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/HUD.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/HUD.cpp" -o CMakeFiles/game_ecs.dir/src/game/HUD.cpp.s
-
 CMakeFiles/game_ecs.dir/src/game/Timer.cpp.o: CMakeFiles/game_ecs.dir/flags.make
 CMakeFiles/game_ecs.dir/src/game/Timer.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/Timer.cpp
 CMakeFiles/game_ecs.dir/src/game/Timer.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game_ecs.dir/src/game/Timer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game_ecs.dir/src/game/Timer.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/Timer.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/Timer.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/Timer.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/Timer.cpp"
 
 CMakeFiles/game_ecs.dir/src/game/Timer.cpp.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/game_ecs.dir/src/game/Timer.cpp.s: cmake_force
 CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.o: CMakeFiles/game_ecs.dir/flags.make
 CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/System.cpp
 CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/System.cpp"
 
 CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.i: cmake_force
@@ -139,10 +125,66 @@ CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/System.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.s
 
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Collision.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Collision.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Collision.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Collision.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/CollisionResult.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/CollisionResult.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/CollisionResult.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/CollisionResult.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/DestroyRequest.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/DestroyRequest.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/DestroyRequest.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/DestroyRequest.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Expirable.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Expirable.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Expirable.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Expirable.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.s
+
 CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.o: CMakeFiles/game_ecs.dir/flags.make
 CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Input.cpp
 CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Input.cpp"
 
 CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.i: cmake_force
@@ -153,10 +195,136 @@ CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Input.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.s
 
+CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/KeyboardInput.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/KeyboardInput.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/KeyboardInput.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/KeyboardInput.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Player.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Player.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Player.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Player.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Projectile.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Projectile.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Projectile.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Projectile.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/ShootRequest.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/ShootRequest.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/ShootRequest.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/ShootRequest.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/ShootingGalleryState.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/ShootingGalleryState.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/ShootingGalleryState.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/ShootingGalleryState.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Target.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Target.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Target.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Target.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/CollisionResponseSystem.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/CollisionResponseSystem.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/CollisionResponseSystem.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/CollisionResponseSystem.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/CollisionSystem.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/CollisionSystem.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/CollisionSystem.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/CollisionSystem.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/DuckMovementSystem.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/DuckMovementSystem.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/DuckMovementSystem.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/DuckMovementSystem.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.s
+
 CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.o: CMakeFiles/game_ecs.dir/flags.make
 CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/EventSystem.cpp
 CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/EventSystem.cpp"
 
 CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.i: cmake_force
@@ -167,10 +335,66 @@ CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/EventSystem.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.s
 
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/ExpiredEntitiesSystem.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/ExpiredEntitiesSystem.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/ExpiredEntitiesSystem.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/ExpiredEntitiesSystem.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/GameStateSystem.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/GameStateSystem.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/GameStateSystem.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/GameStateSystem.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/PlayerControlSystem.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/PlayerControlSystem.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/PlayerControlSystem.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/PlayerControlSystem.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/ProjectileSystem.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/ProjectileSystem.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/ProjectileSystem.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/ProjectileSystem.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.s
+
 CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.o: CMakeFiles/game_ecs.dir/flags.make
 CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/RenderSystem.cpp
 CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/RenderSystem.cpp"
 
 CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.i: cmake_force
@@ -181,10 +405,38 @@ CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/RenderSystem.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.s
 
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/TargetSpawnSystem.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/TargetSpawnSystem.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/TargetSpawnSystem.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/TargetSpawnSystem.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/UIEventSystem.cpp
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/UIEventSystem.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/UIEventSystem.cpp" > CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/UIEventSystem.cpp" -o CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.s
+
 CMakeFiles/game_ecs.dir/src/game/events/Event.cpp.o: CMakeFiles/game_ecs.dir/flags.make
 CMakeFiles/game_ecs.dir/src/game/events/Event.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/events/Event.cpp
 CMakeFiles/game_ecs.dir/src/game/events/Event.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game_ecs.dir/src/game/events/Event.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/game_ecs.dir/src/game/events/Event.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/events/Event.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/events/Event.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/events/Event.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/events/Event.cpp"
 
 CMakeFiles/game_ecs.dir/src/game/events/Event.cpp.i: cmake_force
@@ -198,7 +450,7 @@ CMakeFiles/game_ecs.dir/src/game/events/Event.cpp.s: cmake_force
 CMakeFiles/game_ecs.dir/src/game/events/EventManager.cpp.o: CMakeFiles/game_ecs.dir/flags.make
 CMakeFiles/game_ecs.dir/src/game/events/EventManager.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/events/EventManager.cpp
 CMakeFiles/game_ecs.dir/src/game/events/EventManager.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game_ecs.dir/src/game/events/EventManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/game_ecs.dir/src/game/events/EventManager.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/events/EventManager.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/events/EventManager.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/events/EventManager.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/events/EventManager.cpp"
 
 CMakeFiles/game_ecs.dir/src/game/events/EventManager.cpp.i: cmake_force
@@ -212,7 +464,7 @@ CMakeFiles/game_ecs.dir/src/game/events/EventManager.cpp.s: cmake_force
 CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.o: CMakeFiles/game_ecs.dir/flags.make
 CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/events/KeyboardEvent.cpp
 CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/events/KeyboardEvent.cpp"
 
 CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.i: cmake_force
@@ -223,37 +475,169 @@ CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/events/KeyboardEvent.cpp" -o CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.s
 
+CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/resources/Image.cpp
+CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/resources/Image.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/resources/Image.cpp" > CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/resources/Image.cpp" -o CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/resources/ResourceManager.cpp
+CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/resources/ResourceManager.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/resources/ResourceManager.cpp" > CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/resources/ResourceManager.cpp" -o CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ui/DebugOverlay.cpp
+CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ui/DebugOverlay.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ui/DebugOverlay.cpp" > CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ui/DebugOverlay.cpp" -o CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ui/GameHUD.cpp
+CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ui/GameHUD.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ui/GameHUD.cpp" > CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ui/GameHUD.cpp" -o CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ui/HUD.cpp
+CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ui/HUD.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ui/HUD.cpp" > CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ui/HUD.cpp" -o CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.s
+
+CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.o: CMakeFiles/game_ecs.dir/flags.make
+CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.o: /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ui/TextRenderer.cpp
+CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.o: CMakeFiles/game_ecs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.o -MF CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.o.d -o CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.o -c "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ui/TextRenderer.cpp"
+
+CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ui/TextRenderer.cpp" > CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.i
+
+CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ui/TextRenderer.cpp" -o CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.s
+
 # Object files for target game_ecs
 game_ecs_OBJECTS = \
 "CMakeFiles/game_ecs.dir/src/game/GameEngine.cpp.o" \
 "CMakeFiles/game_ecs.dir/src/game/GameWorld.cpp.o" \
-"CMakeFiles/game_ecs.dir/src/game/HUD.cpp.o" \
 "CMakeFiles/game_ecs.dir/src/game/Timer.cpp.o" \
 "CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.o" \
 "CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.o" \
 "CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.o" \
 "CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.o" \
 "CMakeFiles/game_ecs.dir/src/game/events/Event.cpp.o" \
 "CMakeFiles/game_ecs.dir/src/game/events/EventManager.cpp.o" \
-"CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.o"
+"CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.o" \
+"CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.o"
 
 # External object files for target game_ecs
 game_ecs_EXTERNAL_OBJECTS =
 
 libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/GameEngine.cpp.o
 libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/GameWorld.cpp.o
-libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/HUD.cpp.o
 libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/Timer.cpp.o
 libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.o
 libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.o
 libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.o
 libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.o
 libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/events/Event.cpp.o
 libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/events/EventManager.cpp.o
 libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.o
+libgame_ecs.a: CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.o
 libgame_ecs.a: CMakeFiles/game_ecs.dir/build.make
 libgame_ecs.a: CMakeFiles/game_ecs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libgame_ecs.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX static library libgame_ecs.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/game_ecs.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game_ecs.dir/link.txt --verbose=$(VERBOSE)
 

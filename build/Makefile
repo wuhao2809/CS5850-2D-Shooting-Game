@@ -190,30 +190,6 @@ src/game/GameWorld.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/GameWorld.cpp.s
 .PHONY : src/game/GameWorld.cpp.s
 
-src/game/HUD.o: src/game/HUD.cpp.o
-.PHONY : src/game/HUD.o
-
-# target to build an object file
-src/game/HUD.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/HUD.cpp.o
-.PHONY : src/game/HUD.cpp.o
-
-src/game/HUD.i: src/game/HUD.cpp.i
-.PHONY : src/game/HUD.i
-
-# target to preprocess a source file
-src/game/HUD.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/HUD.cpp.i
-.PHONY : src/game/HUD.cpp.i
-
-src/game/HUD.s: src/game/HUD.cpp.s
-.PHONY : src/game/HUD.s
-
-# target to generate assembly for a file
-src/game/HUD.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/HUD.cpp.s
-.PHONY : src/game/HUD.cpp.s
-
 src/game/Timer.o: src/game/Timer.cpp.o
 .PHONY : src/game/Timer.o
 
@@ -262,6 +238,102 @@ src/game/ecs/System.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/System.cpp.s
 .PHONY : src/game/ecs/System.cpp.s
 
+src/game/ecs/components/Collision.o: src/game/ecs/components/Collision.cpp.o
+.PHONY : src/game/ecs/components/Collision.o
+
+# target to build an object file
+src/game/ecs/components/Collision.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.o
+.PHONY : src/game/ecs/components/Collision.cpp.o
+
+src/game/ecs/components/Collision.i: src/game/ecs/components/Collision.cpp.i
+.PHONY : src/game/ecs/components/Collision.i
+
+# target to preprocess a source file
+src/game/ecs/components/Collision.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.i
+.PHONY : src/game/ecs/components/Collision.cpp.i
+
+src/game/ecs/components/Collision.s: src/game/ecs/components/Collision.cpp.s
+.PHONY : src/game/ecs/components/Collision.s
+
+# target to generate assembly for a file
+src/game/ecs/components/Collision.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Collision.cpp.s
+.PHONY : src/game/ecs/components/Collision.cpp.s
+
+src/game/ecs/components/CollisionResult.o: src/game/ecs/components/CollisionResult.cpp.o
+.PHONY : src/game/ecs/components/CollisionResult.o
+
+# target to build an object file
+src/game/ecs/components/CollisionResult.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.o
+.PHONY : src/game/ecs/components/CollisionResult.cpp.o
+
+src/game/ecs/components/CollisionResult.i: src/game/ecs/components/CollisionResult.cpp.i
+.PHONY : src/game/ecs/components/CollisionResult.i
+
+# target to preprocess a source file
+src/game/ecs/components/CollisionResult.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.i
+.PHONY : src/game/ecs/components/CollisionResult.cpp.i
+
+src/game/ecs/components/CollisionResult.s: src/game/ecs/components/CollisionResult.cpp.s
+.PHONY : src/game/ecs/components/CollisionResult.s
+
+# target to generate assembly for a file
+src/game/ecs/components/CollisionResult.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/CollisionResult.cpp.s
+.PHONY : src/game/ecs/components/CollisionResult.cpp.s
+
+src/game/ecs/components/DestroyRequest.o: src/game/ecs/components/DestroyRequest.cpp.o
+.PHONY : src/game/ecs/components/DestroyRequest.o
+
+# target to build an object file
+src/game/ecs/components/DestroyRequest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.o
+.PHONY : src/game/ecs/components/DestroyRequest.cpp.o
+
+src/game/ecs/components/DestroyRequest.i: src/game/ecs/components/DestroyRequest.cpp.i
+.PHONY : src/game/ecs/components/DestroyRequest.i
+
+# target to preprocess a source file
+src/game/ecs/components/DestroyRequest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.i
+.PHONY : src/game/ecs/components/DestroyRequest.cpp.i
+
+src/game/ecs/components/DestroyRequest.s: src/game/ecs/components/DestroyRequest.cpp.s
+.PHONY : src/game/ecs/components/DestroyRequest.s
+
+# target to generate assembly for a file
+src/game/ecs/components/DestroyRequest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/DestroyRequest.cpp.s
+.PHONY : src/game/ecs/components/DestroyRequest.cpp.s
+
+src/game/ecs/components/Expirable.o: src/game/ecs/components/Expirable.cpp.o
+.PHONY : src/game/ecs/components/Expirable.o
+
+# target to build an object file
+src/game/ecs/components/Expirable.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.o
+.PHONY : src/game/ecs/components/Expirable.cpp.o
+
+src/game/ecs/components/Expirable.i: src/game/ecs/components/Expirable.cpp.i
+.PHONY : src/game/ecs/components/Expirable.i
+
+# target to preprocess a source file
+src/game/ecs/components/Expirable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.i
+.PHONY : src/game/ecs/components/Expirable.cpp.i
+
+src/game/ecs/components/Expirable.s: src/game/ecs/components/Expirable.cpp.s
+.PHONY : src/game/ecs/components/Expirable.s
+
+# target to generate assembly for a file
+src/game/ecs/components/Expirable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Expirable.cpp.s
+.PHONY : src/game/ecs/components/Expirable.cpp.s
+
 src/game/ecs/components/Input.o: src/game/ecs/components/Input.cpp.o
 .PHONY : src/game/ecs/components/Input.o
 
@@ -285,6 +357,222 @@ src/game/ecs/components/Input.s: src/game/ecs/components/Input.cpp.s
 src/game/ecs/components/Input.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Input.cpp.s
 .PHONY : src/game/ecs/components/Input.cpp.s
+
+src/game/ecs/components/KeyboardInput.o: src/game/ecs/components/KeyboardInput.cpp.o
+.PHONY : src/game/ecs/components/KeyboardInput.o
+
+# target to build an object file
+src/game/ecs/components/KeyboardInput.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.o
+.PHONY : src/game/ecs/components/KeyboardInput.cpp.o
+
+src/game/ecs/components/KeyboardInput.i: src/game/ecs/components/KeyboardInput.cpp.i
+.PHONY : src/game/ecs/components/KeyboardInput.i
+
+# target to preprocess a source file
+src/game/ecs/components/KeyboardInput.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.i
+.PHONY : src/game/ecs/components/KeyboardInput.cpp.i
+
+src/game/ecs/components/KeyboardInput.s: src/game/ecs/components/KeyboardInput.cpp.s
+.PHONY : src/game/ecs/components/KeyboardInput.s
+
+# target to generate assembly for a file
+src/game/ecs/components/KeyboardInput.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/KeyboardInput.cpp.s
+.PHONY : src/game/ecs/components/KeyboardInput.cpp.s
+
+src/game/ecs/components/Player.o: src/game/ecs/components/Player.cpp.o
+.PHONY : src/game/ecs/components/Player.o
+
+# target to build an object file
+src/game/ecs/components/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.o
+.PHONY : src/game/ecs/components/Player.cpp.o
+
+src/game/ecs/components/Player.i: src/game/ecs/components/Player.cpp.i
+.PHONY : src/game/ecs/components/Player.i
+
+# target to preprocess a source file
+src/game/ecs/components/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.i
+.PHONY : src/game/ecs/components/Player.cpp.i
+
+src/game/ecs/components/Player.s: src/game/ecs/components/Player.cpp.s
+.PHONY : src/game/ecs/components/Player.s
+
+# target to generate assembly for a file
+src/game/ecs/components/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Player.cpp.s
+.PHONY : src/game/ecs/components/Player.cpp.s
+
+src/game/ecs/components/Projectile.o: src/game/ecs/components/Projectile.cpp.o
+.PHONY : src/game/ecs/components/Projectile.o
+
+# target to build an object file
+src/game/ecs/components/Projectile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.o
+.PHONY : src/game/ecs/components/Projectile.cpp.o
+
+src/game/ecs/components/Projectile.i: src/game/ecs/components/Projectile.cpp.i
+.PHONY : src/game/ecs/components/Projectile.i
+
+# target to preprocess a source file
+src/game/ecs/components/Projectile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.i
+.PHONY : src/game/ecs/components/Projectile.cpp.i
+
+src/game/ecs/components/Projectile.s: src/game/ecs/components/Projectile.cpp.s
+.PHONY : src/game/ecs/components/Projectile.s
+
+# target to generate assembly for a file
+src/game/ecs/components/Projectile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Projectile.cpp.s
+.PHONY : src/game/ecs/components/Projectile.cpp.s
+
+src/game/ecs/components/ShootRequest.o: src/game/ecs/components/ShootRequest.cpp.o
+.PHONY : src/game/ecs/components/ShootRequest.o
+
+# target to build an object file
+src/game/ecs/components/ShootRequest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.o
+.PHONY : src/game/ecs/components/ShootRequest.cpp.o
+
+src/game/ecs/components/ShootRequest.i: src/game/ecs/components/ShootRequest.cpp.i
+.PHONY : src/game/ecs/components/ShootRequest.i
+
+# target to preprocess a source file
+src/game/ecs/components/ShootRequest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.i
+.PHONY : src/game/ecs/components/ShootRequest.cpp.i
+
+src/game/ecs/components/ShootRequest.s: src/game/ecs/components/ShootRequest.cpp.s
+.PHONY : src/game/ecs/components/ShootRequest.s
+
+# target to generate assembly for a file
+src/game/ecs/components/ShootRequest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootRequest.cpp.s
+.PHONY : src/game/ecs/components/ShootRequest.cpp.s
+
+src/game/ecs/components/ShootingGalleryState.o: src/game/ecs/components/ShootingGalleryState.cpp.o
+.PHONY : src/game/ecs/components/ShootingGalleryState.o
+
+# target to build an object file
+src/game/ecs/components/ShootingGalleryState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.o
+.PHONY : src/game/ecs/components/ShootingGalleryState.cpp.o
+
+src/game/ecs/components/ShootingGalleryState.i: src/game/ecs/components/ShootingGalleryState.cpp.i
+.PHONY : src/game/ecs/components/ShootingGalleryState.i
+
+# target to preprocess a source file
+src/game/ecs/components/ShootingGalleryState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.i
+.PHONY : src/game/ecs/components/ShootingGalleryState.cpp.i
+
+src/game/ecs/components/ShootingGalleryState.s: src/game/ecs/components/ShootingGalleryState.cpp.s
+.PHONY : src/game/ecs/components/ShootingGalleryState.s
+
+# target to generate assembly for a file
+src/game/ecs/components/ShootingGalleryState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/ShootingGalleryState.cpp.s
+.PHONY : src/game/ecs/components/ShootingGalleryState.cpp.s
+
+src/game/ecs/components/Target.o: src/game/ecs/components/Target.cpp.o
+.PHONY : src/game/ecs/components/Target.o
+
+# target to build an object file
+src/game/ecs/components/Target.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.o
+.PHONY : src/game/ecs/components/Target.cpp.o
+
+src/game/ecs/components/Target.i: src/game/ecs/components/Target.cpp.i
+.PHONY : src/game/ecs/components/Target.i
+
+# target to preprocess a source file
+src/game/ecs/components/Target.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.i
+.PHONY : src/game/ecs/components/Target.cpp.i
+
+src/game/ecs/components/Target.s: src/game/ecs/components/Target.cpp.s
+.PHONY : src/game/ecs/components/Target.s
+
+# target to generate assembly for a file
+src/game/ecs/components/Target.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/components/Target.cpp.s
+.PHONY : src/game/ecs/components/Target.cpp.s
+
+src/game/ecs/systems/CollisionResponseSystem.o: src/game/ecs/systems/CollisionResponseSystem.cpp.o
+.PHONY : src/game/ecs/systems/CollisionResponseSystem.o
+
+# target to build an object file
+src/game/ecs/systems/CollisionResponseSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.o
+.PHONY : src/game/ecs/systems/CollisionResponseSystem.cpp.o
+
+src/game/ecs/systems/CollisionResponseSystem.i: src/game/ecs/systems/CollisionResponseSystem.cpp.i
+.PHONY : src/game/ecs/systems/CollisionResponseSystem.i
+
+# target to preprocess a source file
+src/game/ecs/systems/CollisionResponseSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.i
+.PHONY : src/game/ecs/systems/CollisionResponseSystem.cpp.i
+
+src/game/ecs/systems/CollisionResponseSystem.s: src/game/ecs/systems/CollisionResponseSystem.cpp.s
+.PHONY : src/game/ecs/systems/CollisionResponseSystem.s
+
+# target to generate assembly for a file
+src/game/ecs/systems/CollisionResponseSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionResponseSystem.cpp.s
+.PHONY : src/game/ecs/systems/CollisionResponseSystem.cpp.s
+
+src/game/ecs/systems/CollisionSystem.o: src/game/ecs/systems/CollisionSystem.cpp.o
+.PHONY : src/game/ecs/systems/CollisionSystem.o
+
+# target to build an object file
+src/game/ecs/systems/CollisionSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.o
+.PHONY : src/game/ecs/systems/CollisionSystem.cpp.o
+
+src/game/ecs/systems/CollisionSystem.i: src/game/ecs/systems/CollisionSystem.cpp.i
+.PHONY : src/game/ecs/systems/CollisionSystem.i
+
+# target to preprocess a source file
+src/game/ecs/systems/CollisionSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.i
+.PHONY : src/game/ecs/systems/CollisionSystem.cpp.i
+
+src/game/ecs/systems/CollisionSystem.s: src/game/ecs/systems/CollisionSystem.cpp.s
+.PHONY : src/game/ecs/systems/CollisionSystem.s
+
+# target to generate assembly for a file
+src/game/ecs/systems/CollisionSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.s
+.PHONY : src/game/ecs/systems/CollisionSystem.cpp.s
+
+src/game/ecs/systems/DuckMovementSystem.o: src/game/ecs/systems/DuckMovementSystem.cpp.o
+.PHONY : src/game/ecs/systems/DuckMovementSystem.o
+
+# target to build an object file
+src/game/ecs/systems/DuckMovementSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.o
+.PHONY : src/game/ecs/systems/DuckMovementSystem.cpp.o
+
+src/game/ecs/systems/DuckMovementSystem.i: src/game/ecs/systems/DuckMovementSystem.cpp.i
+.PHONY : src/game/ecs/systems/DuckMovementSystem.i
+
+# target to preprocess a source file
+src/game/ecs/systems/DuckMovementSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.i
+.PHONY : src/game/ecs/systems/DuckMovementSystem.cpp.i
+
+src/game/ecs/systems/DuckMovementSystem.s: src/game/ecs/systems/DuckMovementSystem.cpp.s
+.PHONY : src/game/ecs/systems/DuckMovementSystem.s
+
+# target to generate assembly for a file
+src/game/ecs/systems/DuckMovementSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.s
+.PHONY : src/game/ecs/systems/DuckMovementSystem.cpp.s
 
 src/game/ecs/systems/EventSystem.o: src/game/ecs/systems/EventSystem.cpp.o
 .PHONY : src/game/ecs/systems/EventSystem.o
@@ -310,6 +598,102 @@ src/game/ecs/systems/EventSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.s
 .PHONY : src/game/ecs/systems/EventSystem.cpp.s
 
+src/game/ecs/systems/ExpiredEntitiesSystem.o: src/game/ecs/systems/ExpiredEntitiesSystem.cpp.o
+.PHONY : src/game/ecs/systems/ExpiredEntitiesSystem.o
+
+# target to build an object file
+src/game/ecs/systems/ExpiredEntitiesSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.o
+.PHONY : src/game/ecs/systems/ExpiredEntitiesSystem.cpp.o
+
+src/game/ecs/systems/ExpiredEntitiesSystem.i: src/game/ecs/systems/ExpiredEntitiesSystem.cpp.i
+.PHONY : src/game/ecs/systems/ExpiredEntitiesSystem.i
+
+# target to preprocess a source file
+src/game/ecs/systems/ExpiredEntitiesSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.i
+.PHONY : src/game/ecs/systems/ExpiredEntitiesSystem.cpp.i
+
+src/game/ecs/systems/ExpiredEntitiesSystem.s: src/game/ecs/systems/ExpiredEntitiesSystem.cpp.s
+.PHONY : src/game/ecs/systems/ExpiredEntitiesSystem.s
+
+# target to generate assembly for a file
+src/game/ecs/systems/ExpiredEntitiesSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/ExpiredEntitiesSystem.cpp.s
+.PHONY : src/game/ecs/systems/ExpiredEntitiesSystem.cpp.s
+
+src/game/ecs/systems/GameStateSystem.o: src/game/ecs/systems/GameStateSystem.cpp.o
+.PHONY : src/game/ecs/systems/GameStateSystem.o
+
+# target to build an object file
+src/game/ecs/systems/GameStateSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o
+.PHONY : src/game/ecs/systems/GameStateSystem.cpp.o
+
+src/game/ecs/systems/GameStateSystem.i: src/game/ecs/systems/GameStateSystem.cpp.i
+.PHONY : src/game/ecs/systems/GameStateSystem.i
+
+# target to preprocess a source file
+src/game/ecs/systems/GameStateSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.i
+.PHONY : src/game/ecs/systems/GameStateSystem.cpp.i
+
+src/game/ecs/systems/GameStateSystem.s: src/game/ecs/systems/GameStateSystem.cpp.s
+.PHONY : src/game/ecs/systems/GameStateSystem.s
+
+# target to generate assembly for a file
+src/game/ecs/systems/GameStateSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.s
+.PHONY : src/game/ecs/systems/GameStateSystem.cpp.s
+
+src/game/ecs/systems/PlayerControlSystem.o: src/game/ecs/systems/PlayerControlSystem.cpp.o
+.PHONY : src/game/ecs/systems/PlayerControlSystem.o
+
+# target to build an object file
+src/game/ecs/systems/PlayerControlSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.o
+.PHONY : src/game/ecs/systems/PlayerControlSystem.cpp.o
+
+src/game/ecs/systems/PlayerControlSystem.i: src/game/ecs/systems/PlayerControlSystem.cpp.i
+.PHONY : src/game/ecs/systems/PlayerControlSystem.i
+
+# target to preprocess a source file
+src/game/ecs/systems/PlayerControlSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.i
+.PHONY : src/game/ecs/systems/PlayerControlSystem.cpp.i
+
+src/game/ecs/systems/PlayerControlSystem.s: src/game/ecs/systems/PlayerControlSystem.cpp.s
+.PHONY : src/game/ecs/systems/PlayerControlSystem.s
+
+# target to generate assembly for a file
+src/game/ecs/systems/PlayerControlSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/PlayerControlSystem.cpp.s
+.PHONY : src/game/ecs/systems/PlayerControlSystem.cpp.s
+
+src/game/ecs/systems/ProjectileSystem.o: src/game/ecs/systems/ProjectileSystem.cpp.o
+.PHONY : src/game/ecs/systems/ProjectileSystem.o
+
+# target to build an object file
+src/game/ecs/systems/ProjectileSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.o
+.PHONY : src/game/ecs/systems/ProjectileSystem.cpp.o
+
+src/game/ecs/systems/ProjectileSystem.i: src/game/ecs/systems/ProjectileSystem.cpp.i
+.PHONY : src/game/ecs/systems/ProjectileSystem.i
+
+# target to preprocess a source file
+src/game/ecs/systems/ProjectileSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.i
+.PHONY : src/game/ecs/systems/ProjectileSystem.cpp.i
+
+src/game/ecs/systems/ProjectileSystem.s: src/game/ecs/systems/ProjectileSystem.cpp.s
+.PHONY : src/game/ecs/systems/ProjectileSystem.s
+
+# target to generate assembly for a file
+src/game/ecs/systems/ProjectileSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/ProjectileSystem.cpp.s
+.PHONY : src/game/ecs/systems/ProjectileSystem.cpp.s
+
 src/game/ecs/systems/RenderSystem.o: src/game/ecs/systems/RenderSystem.cpp.o
 .PHONY : src/game/ecs/systems/RenderSystem.o
 
@@ -333,6 +717,54 @@ src/game/ecs/systems/RenderSystem.s: src/game/ecs/systems/RenderSystem.cpp.s
 src/game/ecs/systems/RenderSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/RenderSystem.cpp.s
 .PHONY : src/game/ecs/systems/RenderSystem.cpp.s
+
+src/game/ecs/systems/TargetSpawnSystem.o: src/game/ecs/systems/TargetSpawnSystem.cpp.o
+.PHONY : src/game/ecs/systems/TargetSpawnSystem.o
+
+# target to build an object file
+src/game/ecs/systems/TargetSpawnSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.o
+.PHONY : src/game/ecs/systems/TargetSpawnSystem.cpp.o
+
+src/game/ecs/systems/TargetSpawnSystem.i: src/game/ecs/systems/TargetSpawnSystem.cpp.i
+.PHONY : src/game/ecs/systems/TargetSpawnSystem.i
+
+# target to preprocess a source file
+src/game/ecs/systems/TargetSpawnSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.i
+.PHONY : src/game/ecs/systems/TargetSpawnSystem.cpp.i
+
+src/game/ecs/systems/TargetSpawnSystem.s: src/game/ecs/systems/TargetSpawnSystem.cpp.s
+.PHONY : src/game/ecs/systems/TargetSpawnSystem.s
+
+# target to generate assembly for a file
+src/game/ecs/systems/TargetSpawnSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/TargetSpawnSystem.cpp.s
+.PHONY : src/game/ecs/systems/TargetSpawnSystem.cpp.s
+
+src/game/ecs/systems/UIEventSystem.o: src/game/ecs/systems/UIEventSystem.cpp.o
+.PHONY : src/game/ecs/systems/UIEventSystem.o
+
+# target to build an object file
+src/game/ecs/systems/UIEventSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.o
+.PHONY : src/game/ecs/systems/UIEventSystem.cpp.o
+
+src/game/ecs/systems/UIEventSystem.i: src/game/ecs/systems/UIEventSystem.cpp.i
+.PHONY : src/game/ecs/systems/UIEventSystem.i
+
+# target to preprocess a source file
+src/game/ecs/systems/UIEventSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.i
+.PHONY : src/game/ecs/systems/UIEventSystem.cpp.i
+
+src/game/ecs/systems/UIEventSystem.s: src/game/ecs/systems/UIEventSystem.cpp.s
+.PHONY : src/game/ecs/systems/UIEventSystem.s
+
+# target to generate assembly for a file
+src/game/ecs/systems/UIEventSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ecs/systems/UIEventSystem.cpp.s
+.PHONY : src/game/ecs/systems/UIEventSystem.cpp.s
 
 src/game/events/Event.o: src/game/events/Event.cpp.o
 .PHONY : src/game/events/Event.o
@@ -406,6 +838,150 @@ src/game/events/KeyboardEvent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/events/KeyboardEvent.cpp.s
 .PHONY : src/game/events/KeyboardEvent.cpp.s
 
+src/game/resources/Image.o: src/game/resources/Image.cpp.o
+.PHONY : src/game/resources/Image.o
+
+# target to build an object file
+src/game/resources/Image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.o
+.PHONY : src/game/resources/Image.cpp.o
+
+src/game/resources/Image.i: src/game/resources/Image.cpp.i
+.PHONY : src/game/resources/Image.i
+
+# target to preprocess a source file
+src/game/resources/Image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.i
+.PHONY : src/game/resources/Image.cpp.i
+
+src/game/resources/Image.s: src/game/resources/Image.cpp.s
+.PHONY : src/game/resources/Image.s
+
+# target to generate assembly for a file
+src/game/resources/Image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/resources/Image.cpp.s
+.PHONY : src/game/resources/Image.cpp.s
+
+src/game/resources/ResourceManager.o: src/game/resources/ResourceManager.cpp.o
+.PHONY : src/game/resources/ResourceManager.o
+
+# target to build an object file
+src/game/resources/ResourceManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.o
+.PHONY : src/game/resources/ResourceManager.cpp.o
+
+src/game/resources/ResourceManager.i: src/game/resources/ResourceManager.cpp.i
+.PHONY : src/game/resources/ResourceManager.i
+
+# target to preprocess a source file
+src/game/resources/ResourceManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.i
+.PHONY : src/game/resources/ResourceManager.cpp.i
+
+src/game/resources/ResourceManager.s: src/game/resources/ResourceManager.cpp.s
+.PHONY : src/game/resources/ResourceManager.s
+
+# target to generate assembly for a file
+src/game/resources/ResourceManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/resources/ResourceManager.cpp.s
+.PHONY : src/game/resources/ResourceManager.cpp.s
+
+src/game/ui/DebugOverlay.o: src/game/ui/DebugOverlay.cpp.o
+.PHONY : src/game/ui/DebugOverlay.o
+
+# target to build an object file
+src/game/ui/DebugOverlay.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.o
+.PHONY : src/game/ui/DebugOverlay.cpp.o
+
+src/game/ui/DebugOverlay.i: src/game/ui/DebugOverlay.cpp.i
+.PHONY : src/game/ui/DebugOverlay.i
+
+# target to preprocess a source file
+src/game/ui/DebugOverlay.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.i
+.PHONY : src/game/ui/DebugOverlay.cpp.i
+
+src/game/ui/DebugOverlay.s: src/game/ui/DebugOverlay.cpp.s
+.PHONY : src/game/ui/DebugOverlay.s
+
+# target to generate assembly for a file
+src/game/ui/DebugOverlay.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ui/DebugOverlay.cpp.s
+.PHONY : src/game/ui/DebugOverlay.cpp.s
+
+src/game/ui/GameHUD.o: src/game/ui/GameHUD.cpp.o
+.PHONY : src/game/ui/GameHUD.o
+
+# target to build an object file
+src/game/ui/GameHUD.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.o
+.PHONY : src/game/ui/GameHUD.cpp.o
+
+src/game/ui/GameHUD.i: src/game/ui/GameHUD.cpp.i
+.PHONY : src/game/ui/GameHUD.i
+
+# target to preprocess a source file
+src/game/ui/GameHUD.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.i
+.PHONY : src/game/ui/GameHUD.cpp.i
+
+src/game/ui/GameHUD.s: src/game/ui/GameHUD.cpp.s
+.PHONY : src/game/ui/GameHUD.s
+
+# target to generate assembly for a file
+src/game/ui/GameHUD.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ui/GameHUD.cpp.s
+.PHONY : src/game/ui/GameHUD.cpp.s
+
+src/game/ui/HUD.o: src/game/ui/HUD.cpp.o
+.PHONY : src/game/ui/HUD.o
+
+# target to build an object file
+src/game/ui/HUD.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.o
+.PHONY : src/game/ui/HUD.cpp.o
+
+src/game/ui/HUD.i: src/game/ui/HUD.cpp.i
+.PHONY : src/game/ui/HUD.i
+
+# target to preprocess a source file
+src/game/ui/HUD.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.i
+.PHONY : src/game/ui/HUD.cpp.i
+
+src/game/ui/HUD.s: src/game/ui/HUD.cpp.s
+.PHONY : src/game/ui/HUD.s
+
+# target to generate assembly for a file
+src/game/ui/HUD.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ui/HUD.cpp.s
+.PHONY : src/game/ui/HUD.cpp.s
+
+src/game/ui/TextRenderer.o: src/game/ui/TextRenderer.cpp.o
+.PHONY : src/game/ui/TextRenderer.o
+
+# target to build an object file
+src/game/ui/TextRenderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.o
+.PHONY : src/game/ui/TextRenderer.cpp.o
+
+src/game/ui/TextRenderer.i: src/game/ui/TextRenderer.cpp.i
+.PHONY : src/game/ui/TextRenderer.i
+
+# target to preprocess a source file
+src/game/ui/TextRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.i
+.PHONY : src/game/ui/TextRenderer.cpp.i
+
+src/game/ui/TextRenderer.s: src/game/ui/TextRenderer.cpp.s
+.PHONY : src/game/ui/TextRenderer.s
+
+# target to generate assembly for a file
+src/game/ui/TextRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_ecs.dir/build.make CMakeFiles/game_ecs.dir/src/game/ui/TextRenderer.cpp.s
+.PHONY : src/game/ui/TextRenderer.cpp.s
+
 src/main/main.o: src/main/main.cpp.o
 .PHONY : src/main/main.o
 
@@ -446,24 +1022,78 @@ help:
 	@echo "... src/game/GameWorld.o"
 	@echo "... src/game/GameWorld.i"
 	@echo "... src/game/GameWorld.s"
-	@echo "... src/game/HUD.o"
-	@echo "... src/game/HUD.i"
-	@echo "... src/game/HUD.s"
 	@echo "... src/game/Timer.o"
 	@echo "... src/game/Timer.i"
 	@echo "... src/game/Timer.s"
 	@echo "... src/game/ecs/System.o"
 	@echo "... src/game/ecs/System.i"
 	@echo "... src/game/ecs/System.s"
+	@echo "... src/game/ecs/components/Collision.o"
+	@echo "... src/game/ecs/components/Collision.i"
+	@echo "... src/game/ecs/components/Collision.s"
+	@echo "... src/game/ecs/components/CollisionResult.o"
+	@echo "... src/game/ecs/components/CollisionResult.i"
+	@echo "... src/game/ecs/components/CollisionResult.s"
+	@echo "... src/game/ecs/components/DestroyRequest.o"
+	@echo "... src/game/ecs/components/DestroyRequest.i"
+	@echo "... src/game/ecs/components/DestroyRequest.s"
+	@echo "... src/game/ecs/components/Expirable.o"
+	@echo "... src/game/ecs/components/Expirable.i"
+	@echo "... src/game/ecs/components/Expirable.s"
 	@echo "... src/game/ecs/components/Input.o"
 	@echo "... src/game/ecs/components/Input.i"
 	@echo "... src/game/ecs/components/Input.s"
+	@echo "... src/game/ecs/components/KeyboardInput.o"
+	@echo "... src/game/ecs/components/KeyboardInput.i"
+	@echo "... src/game/ecs/components/KeyboardInput.s"
+	@echo "... src/game/ecs/components/Player.o"
+	@echo "... src/game/ecs/components/Player.i"
+	@echo "... src/game/ecs/components/Player.s"
+	@echo "... src/game/ecs/components/Projectile.o"
+	@echo "... src/game/ecs/components/Projectile.i"
+	@echo "... src/game/ecs/components/Projectile.s"
+	@echo "... src/game/ecs/components/ShootRequest.o"
+	@echo "... src/game/ecs/components/ShootRequest.i"
+	@echo "... src/game/ecs/components/ShootRequest.s"
+	@echo "... src/game/ecs/components/ShootingGalleryState.o"
+	@echo "... src/game/ecs/components/ShootingGalleryState.i"
+	@echo "... src/game/ecs/components/ShootingGalleryState.s"
+	@echo "... src/game/ecs/components/Target.o"
+	@echo "... src/game/ecs/components/Target.i"
+	@echo "... src/game/ecs/components/Target.s"
+	@echo "... src/game/ecs/systems/CollisionResponseSystem.o"
+	@echo "... src/game/ecs/systems/CollisionResponseSystem.i"
+	@echo "... src/game/ecs/systems/CollisionResponseSystem.s"
+	@echo "... src/game/ecs/systems/CollisionSystem.o"
+	@echo "... src/game/ecs/systems/CollisionSystem.i"
+	@echo "... src/game/ecs/systems/CollisionSystem.s"
+	@echo "... src/game/ecs/systems/DuckMovementSystem.o"
+	@echo "... src/game/ecs/systems/DuckMovementSystem.i"
+	@echo "... src/game/ecs/systems/DuckMovementSystem.s"
 	@echo "... src/game/ecs/systems/EventSystem.o"
 	@echo "... src/game/ecs/systems/EventSystem.i"
 	@echo "... src/game/ecs/systems/EventSystem.s"
+	@echo "... src/game/ecs/systems/ExpiredEntitiesSystem.o"
+	@echo "... src/game/ecs/systems/ExpiredEntitiesSystem.i"
+	@echo "... src/game/ecs/systems/ExpiredEntitiesSystem.s"
+	@echo "... src/game/ecs/systems/GameStateSystem.o"
+	@echo "... src/game/ecs/systems/GameStateSystem.i"
+	@echo "... src/game/ecs/systems/GameStateSystem.s"
+	@echo "... src/game/ecs/systems/PlayerControlSystem.o"
+	@echo "... src/game/ecs/systems/PlayerControlSystem.i"
+	@echo "... src/game/ecs/systems/PlayerControlSystem.s"
+	@echo "... src/game/ecs/systems/ProjectileSystem.o"
+	@echo "... src/game/ecs/systems/ProjectileSystem.i"
+	@echo "... src/game/ecs/systems/ProjectileSystem.s"
 	@echo "... src/game/ecs/systems/RenderSystem.o"
 	@echo "... src/game/ecs/systems/RenderSystem.i"
 	@echo "... src/game/ecs/systems/RenderSystem.s"
+	@echo "... src/game/ecs/systems/TargetSpawnSystem.o"
+	@echo "... src/game/ecs/systems/TargetSpawnSystem.i"
+	@echo "... src/game/ecs/systems/TargetSpawnSystem.s"
+	@echo "... src/game/ecs/systems/UIEventSystem.o"
+	@echo "... src/game/ecs/systems/UIEventSystem.i"
+	@echo "... src/game/ecs/systems/UIEventSystem.s"
 	@echo "... src/game/events/Event.o"
 	@echo "... src/game/events/Event.i"
 	@echo "... src/game/events/Event.s"
@@ -473,6 +1103,24 @@ help:
 	@echo "... src/game/events/KeyboardEvent.o"
 	@echo "... src/game/events/KeyboardEvent.i"
 	@echo "... src/game/events/KeyboardEvent.s"
+	@echo "... src/game/resources/Image.o"
+	@echo "... src/game/resources/Image.i"
+	@echo "... src/game/resources/Image.s"
+	@echo "... src/game/resources/ResourceManager.o"
+	@echo "... src/game/resources/ResourceManager.i"
+	@echo "... src/game/resources/ResourceManager.s"
+	@echo "... src/game/ui/DebugOverlay.o"
+	@echo "... src/game/ui/DebugOverlay.i"
+	@echo "... src/game/ui/DebugOverlay.s"
+	@echo "... src/game/ui/GameHUD.o"
+	@echo "... src/game/ui/GameHUD.i"
+	@echo "... src/game/ui/GameHUD.s"
+	@echo "... src/game/ui/HUD.o"
+	@echo "... src/game/ui/HUD.i"
+	@echo "... src/game/ui/HUD.s"
+	@echo "... src/game/ui/TextRenderer.o"
+	@echo "... src/game/ui/TextRenderer.i"
+	@echo "... src/game/ui/TextRenderer.s"
 	@echo "... src/main/main.o"
 	@echo "... src/main/main.i"
 	@echo "... src/main/main.s"
