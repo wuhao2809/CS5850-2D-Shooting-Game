@@ -176,6 +176,7 @@ void PlayerControlSystem::handleMovement(
   float movementSpeed = input->getMoveSpeed() * deltaTime;
   float dx = 0.0f;
   float dy = 0.0f;
+  float targetRotation = transform->getRotation();
 
   // Check left key using dual input approach
   bool leftPressed = isKeyPressed(leftKey, keyboardInput) ||
@@ -199,23 +200,77 @@ void PlayerControlSystem::handleMovement(
 
   if (leftPressed) {
     dx -= movementSpeed;
+    targetRotation = 180.0f; // Facing left
     SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
                 "PlayerControlSystem: LEFT movement detected, dx=%.2f", dx);
   }
   if (rightPressed) {
     dx += movementSpeed;
+    targetRotation = 0.0f; // Facing right
     SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
                 "PlayerControlSystem: RIGHT movement detected, dx=%.2f", dx);
   }
   if (upPressed) {
     dy -= movementSpeed;
+    targetRotation = 270.0f; // Facing up
     SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
                 "PlayerControlSystem: UP movement detected, dy=%.2f", dy);
   }
   if (downPressed) {
     dy += movementSpeed;
+    targetRotation = 90.0f; // Facing down
     SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
                 "PlayerControlSystem: DOWN movement detected, dy=%.2f", dy);
+  }
+
+  // Add diagonal movement handling
+  if (upPressed && rightPressed) {
+    targetRotation = 315.0f; // Facing up-right
+    SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
+                "PlayerControlSystem: UP-RIGHT movement detected");
+  } else if (upPressed && leftPressed) {
+    targetRotation = 225.0f; // Facing up-left
+    SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
+                "PlayerControlSystem: UP-LEFT movement detected");
+  } else if (downPressed && rightPressed) {
+    targetRotation = 45.0f; // Facing down-right
+    SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
+                "PlayerControlSystem: DOWN-RIGHT movement detected");
+  } else if (downPressed && leftPressed) {
+    targetRotation = 135.0f; // Facing down-left
+    SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
+                "PlayerControlSystem: DOWN-LEFT movement detected");
+  }
+
+  // Normalize diagonal movement speed
+  if ((upPressed || downPressed) && (leftPressed || rightPressed)) {
+    // Normalize diagonal movement to prevent faster diagonal movement
+    float length = std::sqrt(dx * dx + dy * dy);
+    if (length > 0) {
+      dx = (dx / length) * movementSpeed;
+      dy = (dy / length) * movementSpeed;
+    }
+  }
+
+  float currentRotation = transform->getRotation();
+  float rotationSpeed = 720.0f * deltaTime; // Degrees per second
+  float newRotation = currentRotation;
+
+  // Calculate the shortest path to the target rotation
+  float diff = targetRotation - currentRotation;
+  if (diff > 180.0f)
+    diff -= 360.0f;
+  if (diff < -180.0f)
+    diff += 360.0f;
+
+  // Apply rotation with smoothing
+  if (std::abs(diff) > 0.1f) {
+    newRotation += std::copysign(std::min(std::abs(diff), rotationSpeed), diff);
+    // Normalize rotation to 0-360 range
+    while (newRotation >= 360.0f)
+      newRotation -= 360.0f;
+    while (newRotation < 0.0f)
+      newRotation += 360.0f;
   }
 
   if (dx != 0.0f || dy != 0.0f) {
@@ -241,6 +296,7 @@ void PlayerControlSystem::handleMovement(
                 newY, dx, dy);
 
     transform->setPosition(newX, newY);
+    transform->setRotation(newRotation);
   }
 }
 
