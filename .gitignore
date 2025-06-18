@@ -1,0 +1,217 @@
+# Build directories
+build/
+Build/
+out/
+cmake-build-*/
+CMakeFiles/
+Debug/
+Release/
+RelWithDebInfo/
+MinSizeRel/
+
+# CMake
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+*.cmake
+!CMakeLists.txt
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+GameEngine
+game_executable
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# IDE - Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+
+# IDE - Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+*.psess
+*.vsp
+*.vspx
+
+# IDE - CLion / IntelliJ
+.idea/
+cmake-build-*/
+*.iws
+*.iml
+*.ipr
+
+# IDE - Xcode
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData/
+*.xcuserstate
+
+# IDE - Qt Creator
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Package files
+*.jar
+*.rar
+*.tar
+*.zip
+*.gz
+*.bz2
+*.7z
+
+# Dependencies (if using package managers)
+vcpkg_installed/
+conan/
+.conan/
+
+# Documentation
+docs/_build/
+doxygen/
+html/
+latex/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Core dumps
+core
+vgcore.*
+core.*
+
+# Profiling
+*.gcda
+*.gcno
+*.gcov
+gmon.out
+*.prof
+callgrind.out.*
+
+# Game-specific (adjust based on your needs)
+# Uncomment if these are generated at runtime
+# saves/
+# screenshots/
+# config.ini
+# settings.json
+
+# Keep asset directories but you might want to ignore large binary assets
+# Uncomment and adjust if needed:
+# *.psd
+# *.blend
+# *.max
+# *.fbx
+# *.mb
+# *.ma
+
+# Python (if you have any Python scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# If using git-lfs for large assets, you might want to track those separately
+# *.png
+# *.jpg
+# *.wav
+# *.mp3
+# *.ogg
+
+# Ignore local development configuration
+.env
+.env.local
+config.local.json
+
+# Ignore crash dumps and reports
+crash_reports/
+*.dmp
+*.mdmp

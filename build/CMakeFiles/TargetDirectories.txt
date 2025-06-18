@@ -1,6 +1,0 @@
-/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles/game_ecs.dir
-/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles/GameEngine.dir
-/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles/edit_cache.dir
-/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/CMakeFiles/rebuild_cache.dir
-/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/_deps/json-build/CMakeFiles/edit_cache.dir
-/Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/build/_deps/json-build/CMakeFiles/rebuild_cache.dir
