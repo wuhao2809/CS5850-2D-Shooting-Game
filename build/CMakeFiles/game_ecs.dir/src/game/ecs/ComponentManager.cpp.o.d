@@ -1,10 +1,8 @@
-CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o: \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/GameStateSystem.cpp \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/GameStateSystem.hpp \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../System.hpp \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../ComponentManager.hpp \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../Component.hpp \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../Entity.hpp \
+CMakeFiles/game_ecs.dir/src/game/ecs/ComponentManager.cpp.o: \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/ComponentManager.cpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/ComponentManager.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/Component.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/Entity.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdint \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config \
@@ -763,12 +761,6 @@ CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/allocator_destructor.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/uses_allocator_construction.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/typeindex \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/unordered_map \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/is_transparent.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__hash_table \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__node_handle \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit_reference \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter.h \
@@ -857,7 +849,15 @@ CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdarg \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/temp_value.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__split_buffer \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/unordered_set \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/unordered_map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/is_transparent.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__hash_table \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__node_handle \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/optional \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../GameWorld.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__tree \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/binary_negate.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/bind.h \
@@ -878,6 +878,108 @@ CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/unary_negate.h \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/json.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/adl_serializer.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/abi_macros.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/conversions/from_json.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/forward_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/valarray \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/exceptions.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/value_t.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/macro_scope.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/meta/detected.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/meta/void_t.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/thirdparty/hedley/hedley.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cassert \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/assert.h \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/string_escape.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/input/position_t.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/meta/cpp_future.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/meta/type_traits.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/iterators/iterator_traits.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/meta/call_std/begin.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/meta/call_std/end.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/json_fwd.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/string_concat.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/meta/identity_tag.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/meta/std_fs.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/filesystem \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/file_clock.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iomanip \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bitset \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/conversions/to_json.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/byte_container_with_subtype.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/hash.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/input/binary_reader.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/input/input_adapters.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/numeric \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/accumulate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/gcd_lcm.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/inclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/inner_product.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/iota.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/midpoint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/partial_sum.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/pstl_reduce.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/input/json_sax.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/input/lexer.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/meta/is_sax.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/input/parser.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/iterators/internal_iterator.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/iterators/iter_impl.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/json_custom_base_class.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/json_pointer.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/json_ref.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/output/binary_writer.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/output/output_adapters.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/output/serializer.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/conversions/to_chars.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/ordered_map.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/any \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/chrono \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/calendar.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/concepts.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/hh_mm_ss.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/day.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/month.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/month_weekday.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/weekday.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/monthday.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/statically_widen.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/year.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/year_month.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/year_month_day.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/literals.h \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/detail/macro_unscope.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/build/_deps/json-src/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../Timer.hpp \
   /opt/homebrew/opt/sdl3/include/SDL3/SDL.h \
   /opt/homebrew/opt/sdl3/include/SDL3/SDL_stdinc.h \
   /opt/homebrew/opt/sdl3/include/SDL3/SDL_platform_defines.h \
@@ -939,28 +1041,96 @@ CMakeFiles/game_ecs.dir/src/game/ecs/systems/GameStateSystem.cpp.o: \
   /opt/homebrew/opt/sdl3/include/SDL3/SDL_tray.h \
   /opt/homebrew/opt/sdl3/include/SDL3/SDL_version.h \
   /opt/homebrew/opt/sdl3/include/SDL3/SDL_oldnames.h \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../components/ShootingGalleryState.hpp \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../components/../Component.hpp \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../components/../Entity.hpp \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../components/CollisionResult.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/chrono \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/calendar.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/concepts.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/hh_mm_ss.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/day.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/file_clock.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/month.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/month_weekday.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/weekday.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/monthday.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/statically_widen.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/year.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/year_month.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/year_month_day.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/literals.h \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../components/../Vector2.hpp \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../components/Player.hpp \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../components/Projectile.hpp \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../components/Target.hpp
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/Entity.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/ComponentManager.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/SystemManager.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/System.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/unordered_set \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/components/Transform.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/components/../Component.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/components/../Vector2.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/components/Sprite.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/components/Movement.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/components/Input.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/components/Images.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/components/Collision.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/components/../Entity.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/components/Player.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/components/ShootingGalleryState.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/MovementSystem.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../System.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../ComponentManager.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../Entity.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../Vector2.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../components/Transform.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../components/Movement.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../components/Sprite.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/RenderSystem.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/EventSystem.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Input.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Movement.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Transform.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/events/EventManager.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/events/Event.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/events/EventListener.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/queue \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/deque \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/events/KeyboardEvent.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/Vector2.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/UIEventSystem.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/components/KeyboardInput.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/CollisionSystem.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../SystemManager.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/PlayerControlSystem.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../../events/EventListener.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../../events/EventManager.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../../events/KeyboardEvent.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../components/Collision.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../components/Expirable.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../components/Input.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../components/KeyboardInput.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../components/Player.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../components/Projectile.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../components/ShootingGalleryState.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/TargetSpawnSystem.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/random \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/generate_canonical.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/binomial_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/cauchy_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/chi_squared_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/gamma_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/exponential_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/clamp_to_integral.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/default_random_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/linear_congruential_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/is_seed_sequence.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/discard_block_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/discrete_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/extreme_value_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/fisher_f_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/geometric_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/negative_binomial_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/poisson_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/normal_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/independent_bits_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/knuth_b.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/shuffle_order_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/lognormal_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/mersenne_twister_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/piecewise_constant_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/piecewise_linear_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/random_device.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/ranlux.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/subtract_with_carry_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/seed_seq.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/DuckMovementSystem.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/ProjectileSystem.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/GameStateSystem.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/../components/CollisionResult.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../ecs/systems/ExpiredEntitiesSystem.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/../events/EventManager.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/fstream

@@ -21,8 +21,8 @@ TargetSpawnSystem::TargetSpawnSystem(float worldWidth, float worldHeight)
       randomEngine_(randomDevice_()), distribution_(0.0f, 1.0f) {
 
   // Target type probabilities (should sum to 1.0)
-  //   targetWeights_["boss"] = 0.1f;   // 10% chance
-  targetWeights_["regular"] = 1.0; // 100% chance
+  targetWeights_["boss"] = 0.1f;   // 10% chance
+  targetWeights_["regular"] = 0.9; // 100% chance
 
   SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
               "[TargetSpawnSystem] Initialized with world %fx%f", worldWidth_,

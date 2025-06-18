@@ -875,8 +875,8 @@ CMakeFiles/game_ecs.dir/src/game/ecs/systems/EventSystem.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/unary_negate.h \
   /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/System.hpp \
   /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/ComponentManager.hpp \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/Entity.hpp \
   /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/Component.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/Entity.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/typeindex \
   /opt/homebrew/opt/sdl3/include/SDL3/SDL.h \
   /opt/homebrew/opt/sdl3/include/SDL3/SDL_stdinc.h \

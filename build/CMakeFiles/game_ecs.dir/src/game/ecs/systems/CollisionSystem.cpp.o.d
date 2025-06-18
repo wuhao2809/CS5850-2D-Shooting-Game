@@ -3,6 +3,7 @@ CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.o: \
   /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/CollisionSystem.hpp \
   /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../System.hpp \
   /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../ComponentManager.hpp \
+  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../Component.hpp \
   /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../Entity.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdint \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
@@ -761,7 +762,6 @@ CMakeFiles/game_ecs.dir/src/game/ecs/systems/CollisionSystem.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/weak_result_type.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/allocator_destructor.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/uses_allocator_construction.h \
-  /Users/haowu/Desktop/code/projects/2D\ Shooting\ Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/../Component.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/typeindex \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/unordered_map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/is_transparent.h \

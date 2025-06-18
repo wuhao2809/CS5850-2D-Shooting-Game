@@ -33,30 +33,25 @@ DuckMovementSystem::DuckMovementSystem(float worldWidth, float worldHeight)
 void DuckMovementSystem::update(float deltaTime) {
   ComponentManager &cm = ComponentManager::getInstance();
 
-  // Find the player entity
-  Entity playerEntity;
-  bool foundPlayer = false;
-  for (const auto &entity : getEntities()) {
-    if (cm.getComponent<components::Player>(entity)) {
-      playerEntity = entity;
-      foundPlayer = true;
-      break;
-    }
-  }
+  // Find the player entity GLOBALLY using the getEntitiesWithComponent method
+  auto playerEntities = cm.getEntitiesWithComponent<components::Player>();
 
-  if (!foundPlayer) {
+  if (playerEntities.empty()) {
     SDL_LogWarn(SDL_LOG_CATEGORY_APPLICATION,
-                "[DuckMovementSystem] No player found for pawn tracking");
+                "[DuckMovementSystem] No player found in entire game");
     return;
   }
 
+  Entity playerEntity = playerEntities[0]; // Take the first player
   auto *playerTransform = cm.getComponent<components::Transform>(playerEntity);
+
   if (!playerTransform) {
     SDL_LogWarn(SDL_LOG_CATEGORY_APPLICATION,
                 "[DuckMovementSystem] Player has no Transform component");
     return;
   }
 
+  // Now process the ducks in this system
   for (const Entity &entity : getEntities()) {
     auto *transform = cm.getComponent<components::Transform>(entity);
     auto *movement = cm.getComponent<components::Movement>(entity);
@@ -64,6 +59,11 @@ void DuckMovementSystem::update(float deltaTime) {
     auto *expirable = cm.getComponent<components::Expirable>(entity);
 
     if (!transform || !movement || !target || !expirable) {
+      continue;
+    }
+
+    // Skip the player (though it shouldn't be in this system anyway)
+    if (entity.getId() == playerEntity.getId()) {
       continue;
     }
 
@@ -83,9 +83,9 @@ void DuckMovementSystem::update(float deltaTime) {
       toPlayer.y /= distance;
 
       // Set velocity towards player
-      float speed = 200.0f; // Default speed
+      float speed = 50.0f; // Default speed
       if (target->getTargetType() == "regular") {
-        speed = 200.0f;
+        speed = 50.0f;
       } else if (target->getTargetType() == "boss") {
         speed = 100.0f;
       }
