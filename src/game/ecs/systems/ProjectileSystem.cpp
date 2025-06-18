@@ -233,7 +233,7 @@ Entity *ProjectileSystem::createProjectileFromRequest(
                                      typeid(components::Transform));
 
     // Add Movement component with direction from request
-    float speed = 400.0f; // Base speed
+    float speed = 800.0f; // Base speed
     Vector2 direction = shootRequest.getDirection();
     Vector2 velocity(direction.x * speed, direction.y * speed);
     cm.addComponent<components::Movement>(projectileEntity, velocity);

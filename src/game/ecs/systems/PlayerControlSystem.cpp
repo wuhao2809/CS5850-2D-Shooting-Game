@@ -463,7 +463,7 @@ void PlayerControlSystem::createProjectile(float x, float y) {
         missileStartY -
         10.0f; // Distance from missile start to screen top minus buffer
     getComponentManager()->addComponent<game::ecs::components::Projectile>(
-        projectileEntity, 400.0f, maxRange);
+        projectileEntity, 800.0f, maxRange);
     SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
                 "PlayerControlSystem: Added Projectile component (speed=400, "
                 "range=%.1f)",
