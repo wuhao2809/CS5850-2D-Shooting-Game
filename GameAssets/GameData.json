@@ -101,7 +101,7 @@
           }
         },
         "images": {
-          "imageNames": ["duck_left.png", "duck_right.png"],
+          "imageNames": ["pawn1.png"],
           "activeImage": 0
         },
         "target": {
