@@ -52,8 +52,8 @@
       "type": "AABB"
     },
         "sprite": {
-          "width": 80,
-          "height": 80,
+          "width": 50,
+          "height": 50,
           "color": {
             "r": 0,
             "g": 100,
@@ -94,8 +94,8 @@
     "duck_regular": {
       "components": {
         "sprite": {
-          "width": 60,
-          "height": 60,
+          "width": 48,
+          "height": 48,
           "color": {
             "r": 255,
             "g": 255,

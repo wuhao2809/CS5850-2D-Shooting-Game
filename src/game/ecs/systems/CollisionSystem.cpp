@@ -163,15 +163,39 @@ bool CollisionSystem::checkCollision(const Entity &entityA,
     return false;
   }
 
-  // AABB collision check
-  return (transformA->getPosition().x <
-              transformB->getPosition().x + spriteB->getWidth() &&
-          transformA->getPosition().x + spriteA->getWidth() >
-              transformB->getPosition().x &&
-          transformA->getPosition().y <
-              transformB->getPosition().y + spriteB->getHeight() &&
-          transformA->getPosition().y + spriteA->getHeight() >
-              transformB->getPosition().y);
+  // Add padding to make collision boxes smaller
+  // Adjust these values to make collision boxes smaller or larger
+  float paddingA = 10.0f; // Pixels to shrink entityA's collision box
+  float paddingB = 10.0f; // Pixels to shrink entityB's collision box
+
+  // Special padding for player (make player collision box even smaller)
+  bool aIsPlayer =
+      componentManager_.getComponent<components::Player>(entityA) != nullptr;
+  bool bIsPlayer =
+      componentManager_.getComponent<components::Player>(entityB) != nullptr;
+
+  if (aIsPlayer) {
+    paddingA =
+        20.0f; // Make player collision box 20 pixels smaller on each side
+  }
+  if (bIsPlayer) {
+    paddingB =
+        20.0f; // Make player collision box 20 pixels smaller on each side
+  }
+
+  // Calculate collision bounds with padding
+  float leftA = transformA->getPosition().x + paddingA;
+  float rightA = transformA->getPosition().x + spriteA->getWidth() - paddingA;
+  float topA = transformA->getPosition().y + paddingA;
+  float bottomA = transformA->getPosition().y + spriteA->getHeight() - paddingA;
+
+  float leftB = transformB->getPosition().x + paddingB;
+  float rightB = transformB->getPosition().x + spriteB->getWidth() - paddingB;
+  float topB = transformB->getPosition().y + paddingB;
+  float bottomB = transformB->getPosition().y + spriteB->getHeight() - paddingB;
+
+  // AABB collision check with padded bounds
+  return (leftA < rightB && rightA > leftB && topA < bottomB && bottomA > topB);
 }
 
 CollisionSystem::CollisionInfo
