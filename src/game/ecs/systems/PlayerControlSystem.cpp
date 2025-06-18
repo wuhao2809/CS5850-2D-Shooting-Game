@@ -351,13 +351,20 @@ void PlayerControlSystem::handleShooting(
           getComponentManager()->getComponent<game::ecs::components::Sprite>(
               entity);
       float centerX = transform->getPosition().x;
+      float centerY = transform->getPosition().y;
       if (sprite) {
         centerX = transform->getPosition().x + (sprite->getWidth() / 2.0f);
+        centerY = transform->getPosition().y + (sprite->getHeight() / 2.0f);
       }
 
-      // NEW: Create ShootRequest component instead of directly creating
-      // projectile
-      createShootRequest(entity, centerX, transform->getPosition().y);
+      float rotationRadians = transform->getRotation() * M_PI / 180.0f;
+
+      // Claculate the direction vector based on the rotation
+      float dirX = cos(rotationRadians);
+      float dirY = sin(rotationRadians);
+
+      // Create ShootRequest component instead of directly creating projectile
+      createShootRequest(entity, centerX, centerY, dirX, dirY);
       player->fire();
 
       // Record shot in game state (matches Python/Java)
@@ -392,31 +399,26 @@ bool PlayerControlSystem::isKeyPressed(
 }
 
 void PlayerControlSystem::createShootRequest(const Entity &entity, float x,
-                                             float y) {
+                                             float y, float dirX, float dirY) {
   SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
               "PlayerControlSystem.createShootRequest: Creating shoot request "
-              "for entity %llu at (%.1f, %.1f)",
-              entity.getId(), x, y);
+              "for entity %llu at (%.1f, %.1f) with direction (%.2f, %.2f)",
+              entity.getId(), x, y, dirX, dirY);
 
   try {
-    // Calculate missile starting position (matches existing createProjectile
-    // logic)
-    float missileStartY = y - 10.0f; // Spawn slightly above player
+
+    float offset = 10.0f; // Distance from entity center
+    float startX = x + (dirX * offset);
+    float startY = y + (dirY * offset);
 
     // Create ShootRequest component with position
-    game::ecs::Vector2 shootPosition(x, missileStartY);
     getComponentManager()->addComponent<game::ecs::components::ShootRequest>(
-        entity, shootPosition);
-
-    SDL_LogInfo(
-        SDL_LOG_CATEGORY_APPLICATION,
-        "PlayerControlSystem: Added ShootRequest component at (%.1f, %.1f)", x,
-        missileStartY);
+        entity, startX, startY, dirX, dirY);
 
     SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
                 "🎯 PlayerControlSystem: SHOOT REQUEST CREATED - Entity %llu at "
-                "(%.1f, %.1f)",
-                entity.getId(), x, missileStartY);
+                "(%.1f, %.1f) with direction (%.2f, %.2f)",
+                entity.getId(), startX, startY, dirX, dirY);
 
   } catch (const std::exception &e) {
     SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
