@@ -100,36 +100,42 @@ void TargetSpawnSystem::spawnTarget() {
   // Choose target type based on weights
   std::string targetType = chooseTargetType();
 
-  // Choose which side to spawn from (left or right edge)
-  bool spawnFromLeft = distribution_(randomEngine_) < 0.5f;
+  // Choose which edge to spawn from (0: top, 1: right, 2: bottom, 3: left)
+  int edge = static_cast<int>(distribution_(randomEngine_) * 4);
 
-  float x, direction;
-  if (spawnFromLeft) {
-    // Spawn from left edge, flying right
-    x = -25.0f;       // Start just off-screen to the left
-    direction = 1.0f; // Moving right
-  } else {
-    // Spawn from right edge, flying left
-    x = worldWidth_ + 25.0f; // Start just off-screen to the right
-    direction = -1.0f;       // Moving left
+  float x, y;
+  Vector2 direction;
+
+  switch (edge) {
+  case 0: // Top edge
+    x = distribution_(randomEngine_) * worldWidth_;
+    y = -25.0f;
+    direction = Vector2(0.0f, 1.0f);
+    break;
+  case 1: // Right edge
+    x = worldWidth_ + 25.0f;
+    y = distribution_(randomEngine_) * worldHeight_;
+    direction = Vector2(-1.0f, 0.0f);
+    break;
+  case 2: // Bottom edge
+    x = distribution_(randomEngine_) * worldWidth_;
+    y = worldHeight_ + 25.0f;
+    direction = Vector2(0.0f, -1.0f);
+    break;
+  case 3: // Left edge
+    x = -25.0f;
+    y = distribution_(randomEngine_) * worldHeight_;
+    direction = Vector2(1.0f, 0.0f);
+    break;
   }
 
-  // Get template name based on duck type
-  std::string templateName;
-  if (targetType == "regular") {
-    templateName = "duck_regular";
-  } else if (targetType == "boss") {
-    templateName = "duck_boss";
-  } else {
-    templateName = "duck_regular"; // Default
-  }
-
-  // Get flight level from template
-  float y = getFlightLevelFromTemplate(templateName);
+  // Get template name based on target type
+  std::string templateName =
+      (targetType == "regular") ? "duck_regular" : "duck_boss";
 
   // Create target entity
   Entity targetEntity =
-      Entity::create("duck_" + std::to_string(SDL_GetTicks()));
+      Entity::create("pawn_" + std::to_string(SDL_GetTicks()));
 
   // Notify SystemManager about new entity BEFORE adding components
   auto &systemManager = SystemManager::getInstance();
@@ -145,12 +151,11 @@ void TargetSpawnSystem::spawnTarget() {
   ComponentManager &cm = ComponentManager::getInstance();
   auto *targetComponent = cm.getComponent<components::Target>(targetEntity);
   int pointValue = targetComponent ? targetComponent->getPointValue() : 0;
-  std::string sideName = spawnFromLeft ? "left" : "right";
 
   SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
-              "[TargetSpawnSystem] Created %s duck at (%.1f, %.1f) from %s "
-              "side, worth %d points",
-              targetType.c_str(), x, y, sideName.c_str(), pointValue);
+              "[TargetSpawnSystem] Created %s pawn at (%.1f, %.1f) from edge "
+              "%d, worth %d points",
+              targetType.c_str(), x, y, edge, pointValue);
 }
 
 std::string TargetSpawnSystem::chooseTargetType() {
@@ -219,7 +224,7 @@ float TargetSpawnSystem::getSpeedFromTemplate(
 }
 
 void TargetSpawnSystem::createDuckFromTemplate(
-    const Entity &entity, float x, float y, float direction,
+    const Entity &entity, float x, float y, const Vector2 &direction,
     const std::string &templateName) {
   auto it = templates_.find(templateName);
   if (it == templates_.end()) {
@@ -241,8 +246,9 @@ void TargetSpawnSystem::createDuckFromTemplate(
   ComponentManager &cm = ComponentManager::getInstance();
   auto &systemManager = SystemManager::getInstance();
 
-  // Add Transform component
-  cm.addComponent<components::Transform>(entity, Vector2(x, y), 0.0f,
+  // Add Transform component with initial rotation based on direction
+  float initialRotation = std::atan2(direction.y, direction.x) * 180.0f / M_PI;
+  cm.addComponent<components::Transform>(entity, Vector2(x, y), initialRotation,
                                          Vector2(1.0f, 1.0f));
   systemManager.onComponentAdded(
       entity, std::type_index(typeid(components::Transform)));
@@ -277,46 +283,40 @@ void TargetSpawnSystem::createDuckFromTemplate(
       for (const auto &imageName : imagesData["imageNames"]) {
         images->addImage(imageName.get<std::string>());
       }
-      // Choose the correct duck image based on direction
-      int activeImage =
-          direction == -1.0f ? 0 : 1; // 0 for left-facing, 1 for right-facing
-      images->setCurrentImage(activeImage);
+      // Always use the first image since we're rotating the sprite
+      images->setCurrentImage(0);
     }
     systemManager.onComponentAdded(entity,
                                    std::type_index(typeid(components::Images)));
   }
+
+  // Add Movement component with velocity based on direction
+  float speed = getSpeedFromTemplate(templateName);
+  cm.addComponent<components::Movement>(
+      entity, Vector2(direction.x * speed, direction.y * speed));
+  systemManager.onComponentAdded(entity,
+                                 std::type_index(typeid(components::Movement)));
 
   // Add Target component from template
   if (components.contains("target")) {
     const auto &targetData = components["target"];
     int pointValue = targetData.contains("pointValue")
                          ? targetData["pointValue"].get<int>()
-                         : 10;
+                         : 10; // Default point value
     std::string targetType = targetData.contains("targetType")
                                  ? targetData["targetType"].get<std::string>()
-                                 : "duck";
-
+                                 : "regular";
     cm.addComponent<components::Target>(entity, pointValue, targetType);
     systemManager.onComponentAdded(entity,
                                    std::type_index(typeid(components::Target)));
   }
 
-  // Add Movement component for horizontal movement
-  float speed = getSpeedFromTemplate(templateName);
-  float velocityX = speed * direction; // Positive for right, negative for left
-  cm.addComponent<components::Movement>(entity, Vector2(velocityX, 0.0f),
-                                        Vector2(0.0f, 0.0f));
-  systemManager.onComponentAdded(entity,
-                                 std::type_index(typeid(components::Movement)));
+  // Add Collision component
+  cm.addComponent<components::Collision>(entity);
+  systemManager.onComponentAdded(
+      entity, std::type_index(typeid(components::Collision)));
 
-  // Add Collision component from template
-  if (components.contains("collision")) {
-    cm.addComponent<components::Collision>(entity);
-    systemManager.onComponentAdded(
-        entity, std::type_index(typeid(components::Collision)));
-  }
-
-  // Add Expirable component so ducks can be removed
+  // Add Expirable component
   cm.addComponent<components::Expirable>(entity);
   systemManager.onComponentAdded(
       entity, std::type_index(typeid(components::Expirable)));

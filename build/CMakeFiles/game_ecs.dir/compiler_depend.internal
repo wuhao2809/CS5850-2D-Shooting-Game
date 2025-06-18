@@ -16607,6 +16607,7 @@ CMakeFiles/game_ecs.dir/src/game/ecs/systems/DuckMovementSystem.cpp.o
  /Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Expirable.hpp
  /Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Images.hpp
  /Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Movement.hpp
+ /Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Player.hpp
  /Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Target.hpp
  /Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/components/Transform.hpp
  /Users/haowu/Desktop/code/projects/2D Shooting Game/CS5850-2D-Shooting-Game/src/game/ecs/systems/DuckMovementSystem.hpp
