@@ -83,11 +83,11 @@ void DuckMovementSystem::update(float deltaTime) {
       toPlayer.y /= distance;
 
       // Set velocity towards player
-      float speed = 50.0f; // Default speed
+      float speed = 30.0f; // Default speed
       if (target->getTargetType() == "regular") {
-        speed = 50.0f;
+        speed = 30.0f;
       } else if (target->getTargetType() == "boss") {
-        speed = 100.0f;
+        speed = 50.0f;
       }
 
       movement->setVelocity(Vector2(toPlayer.x * speed, toPlayer.y * speed));

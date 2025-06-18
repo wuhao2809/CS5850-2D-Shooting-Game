@@ -137,6 +137,14 @@ void TargetSpawnSystem::spawnTarget() {
   Entity targetEntity =
       Entity::create("pawn_" + std::to_string(SDL_GetTicks()));
 
+  // Add Collision component
+  getComponentManager()->addComponent<components::Collision>(targetEntity);
+  SystemManager::getInstance().onComponentAdded(
+      targetEntity, std::type_index(typeid(components::Collision)));
+  SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
+              "[TargetSpawnSystem] Added Collision component to target %llu",
+              targetEntity.getId());
+
   // Notify SystemManager about new entity BEFORE adding components
   auto &systemManager = SystemManager::getInstance();
   systemManager.onEntityCreated(targetEntity);
